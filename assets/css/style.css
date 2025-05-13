@@ -1,0 +1,910 @@
+/* public/css/styles.css */
+/* =========================== Header ==============================*/
+.header {
+    background: linear-gradient(90deg, #0052D4, #4364F7, #6FB1FC); 
+    border-bottom: 3px solid #003c8f; 
+}
+
+.header .logo span {
+    font-size: 20px;
+    color: #0056b3;
+    transition: color 0.3s;
+}
+
+.header .logo:hover span {
+    color: #ff9800; 
+}
+
+.search-box {
+    position: relative;
+    max-width: 300px;
+    flex: 1;
+    width: 100%; 
+}
+
+.search-input {
+    border-radius: 20px;
+    padding: 8px 15px;
+    border: 1px solid #6a82fb;
+    padding-right: 40px; 
+    text-align: left; 
+}
+
+.search-icon-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-icon {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.search-box button {
+    border-radius: 12px;
+    padding: 6px 10px;
+    /* background: #fafafb; */
+    color: white;
+    transition: background 0.3s;
+}
+
+.search-box button:hover {
+    background: #5a72ea;
+}
+
+.time {
+    font-size: 14px;
+    color: #333;
+}
+
+/* =========================== Thanh điều hướng ==============================*/
+.navbar {
+    background: linear-gradient(90deg, #2c2f33, #3a3d41, #4b4f54);
+}
+
+.navbar .nav-link {
+    color: white !important;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    transform: translateX(-50%);
+}
+
+.navbar .nav-link:hover::after {
+    width: 80%;
+}
+
+.navbar .nav-link:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+}
+
+.navbar .nav-link.active {
+    font-weight: bold;
+    color: #ffcc00 !important;
+}
+
+/* ===========================footer======================================== */
+.footer {
+    background: #343a40;
+    border-top: 3px solid #007bff;
+}
+
+.footer .border-end {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer .footer-info,
+.footer .footer-links {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer .footer-links h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer .footer-links ul li a {
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer .footer-links ul li a:hover {
+    color: #007bff;
+}
+
+.footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 15px 0;
+}
+
+.footer .text-white {
+    font-size: 13px;
+}
+
+/* =======================Nút đẩy lên đầu trang ==============================*/
+#backToTop {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 1000;
+}
+
+/* =========================== Dự báo thời tiết ==============================*/
+.weather-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    padding: 10px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+#weather-cards {
+    margin-left: 0 !important;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+/* =========================== Card Thời tiết ==============================*/
+.weather-card {
+    min-height: 200px;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    border-radius: 12px;
+    color: white;
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.weather-card {
+    min-width: 180px; 
+    flex: 1;
+}
+
+.weather-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.weather-card p {
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* =========================== Responsive ==============================*/
+@media (max-width: 1200px) {
+    .weather-container {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .weather-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .weather-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.weather-box {
+    background: linear-gradient(to bottom, #4facfe, #00f2fe); 
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+}
+
+/* =============================chart================================= */
+.chart-container {
+    background: #f8f9fa; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+/* =========================== Bảng dự báo theo giờ ============================== */
+.table-responsive {
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+
+.table-responsive thead {
+    background-color: #0288d1;
+    color: white;
+}
+
+.table-responsive tbody tr:nth-child(even) {
+    background-color: #e1f5fe;
+}
+
+.table-responsive tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* ==============================login, register, forgot_pw================================= */
+.login-container {
+    background: rgb(220, 248, 252);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-group-text {
+    background-color: #f0f0f0;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2e86c1;
+}
+
+.form-footer {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.form-footer a {
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+/* =========================================== */
+/* =========================== Header ============================== */
+.header {
+    background: linear-gradient(90deg, #0052D4, #4364F7, #6FB1FC); 
+    border-bottom: 3px solid #003c8f; 
+}
+
+.header .logo span {
+    font-size: 20px;
+    color: #0056b3;
+    transition: color 0.3s ease-in-out;
+}
+
+.header .logo:hover span {
+    color: #ff9800; 
+}
+
+.header-search-box {
+    position: relative;
+    max-width: 300px;
+    flex: 1;
+    width: 100%; 
+}
+
+.header-search-input {
+    border-radius: 20px;
+    padding: 8px 15px;
+    border: 1px solid #6a82fb;
+    padding-right: 40px; 
+    text-align: left; 
+    transition: border-color 0.3s ease-in-out;
+}
+
+.header-search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.header-search-icon-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.header-search-icon-btn:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.header-search-icon {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.header-search-box button {
+    border-radius: 12px;
+    padding: 6px 10px;
+    background: #fafafb;
+    color: white;
+    transition: background 0.3s ease-in-out;
+}
+
+.header-search-box button:hover {
+    background: #5a72ea;
+}
+
+.header-time {
+    font-size: 14px;
+    color: #333;
+}
+
+/* =========================== Thanh điều hướng ============================== */
+.navbar {
+    background: linear-gradient(90deg, #2c2f33, #3a3d41, #4b4f54);
+}
+
+.navbar .nav-link {
+    color: white !important;
+    position: relative;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    transform: translateX(-50%);
+}
+
+.navbar .nav-link:hover::after {
+    width: 80%;
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00 !important;
+    transform: scale(1.05);
+}
+
+.navbar .nav-link:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease-in-out;
+}
+
+.navbar .nav-link.active {
+    font-weight: bold;
+    color: #ffcc00 !important;
+}
+
+/* =========================== Footer ============================== */
+.footer {
+    background: #343a40;
+    border-top: 3px solid #007bff;
+}
+
+.footer .footer-border-end {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer .footer-info,
+.footer .footer-links {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer .footer-links h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer .footer-links ul li a {
+    font-size: 14px;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.footer .footer-links ul li a:hover {
+    color: #007bff;
+    transform: translateX(5px);
+    display: inline-block;
+}
+
+.footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 15px 0;
+}
+
+.footer .text-white {
+    font-size: 13px;
+}
+
+/* ======================= Nút đẩy lên đầu trang ============================== */
+#backToTop {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 1000;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* =========================== Dự báo thời tiết ============================== */
+.weather-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    padding: 10px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+#weather-cards {
+    margin-left: 0 !important;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* =========================== Card Thời tiết ============================== */
+.weather-card {
+    min-height: 200px;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    border-radius: 12px;
+    color: white;
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.weather-card {
+    min-width: 180px; 
+    flex: 1;
+}
+
+.weather-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.weather-card p {
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* =========================== Responsive ============================== */
+@media (max-width: 1200px) {
+    .weather-container {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .weather-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .weather-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.weather-box {
+    background: linear-gradient(to bottom, #4facfe, #00f2fe); 
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+}
+
+/* ============================= Chart ============================== */
+.chart-container {
+    background: #f8f9fa; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* =========================== Bảng dự báo theo giờ ============================== */
+.table-responsive {
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+
+.table-responsive thead {
+    background-color: #0288d1;
+    color: white;
+}
+
+.table-responsive tbody tr:nth-child(even) {
+    background-color: #e1f5fe;
+}
+
+.table-responsive tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* ============================== Login, Register, Forgot Password ============================== */
+.auth-container {
+    background: rgb(220, 248, 252);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.auth-container:hover {
+    transform: translateY(-5px);
+}
+
+.auth-input-group-text {
+    background-color: #f0f0f0;
+}
+
+.auth-btn-primary {
+    background-color: #3498db;
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.auth-btn-primary:hover {
+    background-color: #2e86c1;
+    transform: scale(1.05);
+}
+
+.auth-form-footer {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.auth-form-footer a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.auth-form-footer a:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.auth-social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.auth-social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* =========================== Trang News ============================== */
+.news-section-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.news-section-title:hover {
+    color: #007bff;
+}
+
+.news-featured-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #f8f9fa;
+}
+
+.news-featured-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.news-featured-card img {
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-featured-card:hover img {
+    transform: scale(1.05);
+}
+
+.news-featured-card .card-body {
+    padding: 1.5rem;
+}
+
+.news-featured-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.75rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.news-featured-card .card-title:hover {
+    color: #007bff;
+}
+
+.news-featured-card .card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.news-article-item {
+    display: flex;
+    align-items: start;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.news-article-item:hover {
+    background-color: #e9ecef;
+    transform: translateY(-3px);
+}
+
+.news-article-item img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-article-item:hover img {
+    transform: scale(1.05);
+}
+
+.news-article-item h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.news-article-item h6:hover {
+    color: #007bff;
+}
+
+.news-article-item p {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.news-sidebar-section {
+    background-color: #f8f9fa; /* Nền màu xám nhạt cho các phần trong sidebar */
+    border-radius: 8px; /* Bo góc để đẹp hơn */
+    padding: 1rem; /* Thêm padding để tạo không gian */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.news-sidebar-section:hover {
+    transform: translateY(-3px); /* Hiệu ứng nâng nhẹ khi hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ khi hover */
+}
+
+.news-sidebar-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.news-sidebar-title:hover {
+    color: #007bff;
+}
+
+.news-sidebar-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-sidebar-list li {
+    margin-bottom: 0.75rem;
+}
+
+.news-sidebar-list li a {
+    font-size: 0.9rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.news-sidebar-list li a:hover {
+    color: #007bff;
+    transform: translateX(5px);
+    display: inline-block;
+}
+
+/* Hiệu ứng click mượt mà cho các liên kết */
+a {
+    position: relative;
+    transition: transform 0.1s ease-in-out;
+}
+
+a:active {
+    transform: scale(0.95);
+}
+
+/* Hiệu ứng fade cho các phần tử khi tải trang */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.toc {
+    border: 1px solid #8d5c5c;
+    padding: 10px;
+    width: 300px;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.toc-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.toc-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toc-list > li {
+    margin-bottom: 5px;
+}
+
+.toc-list li a {
+    text-decoration: none;
+    color: #1a73e8; /* màu xanh giống hình */
+}
+
+.toc-list ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+/* ================================ */
+.news-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #f8f9fa;
+}
+.news-card img {
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.news-card .card-body {
+    padding: 1.5rem;
+}
+
+.news-card .card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.75rem;
+    transition: color 0.3s ease-in-out;
+}
+.news-card .card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+/* ============================================= */
