@@ -8,11 +8,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const cityNameInHourlyTable = document.querySelector(".aqi-city");
 
     // Biến lưu thông tin tỉnh/thành phố và tọa độ
-    let currentCity = DEFAULT_CITY;
-    let currentLat = 21.0285; // Tọa độ mặc định của Hà Nội
-    let currentLon = 105.8542;
-    let currentForecastData = null;
-    let currentHourlyData = null;
+    let currentCity = "Hà Nội"; // mặc định
+    const storedCityData = localStorage.getItem("selectedCity");
+    if (storedCityData) {
+        try {
+            const cityData = JSON.parse(storedCityData);
+            if (cityData && cityData.name) {
+                currentCity = cityData.name;
+            }
+        } catch (e) {
+            console.warn("Lỗi khi phân tích dữ liệu thành phố từ localStorage:", e);
+        }
+    }
+
+
 
     // Bảng dịch mô tả thời tiết sang tiếng Việt
     const weatherDescriptions = {
@@ -326,6 +335,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     btn.classList.remove("active");
                     btn.style.backgroundColor = "#FFEB3B";
                     btn.style.color = "black";
+                    if (currentForecastData) {
+                        const daysFromToday = parseInt(button.dataset.day) || 0;
+                        renderForecastForDay(daysFromToday); // dùng currentForecastData đã có
+                    }
                 });
                 this.classList.add("active");
                 this.style.backgroundColor = "#007BFF";
