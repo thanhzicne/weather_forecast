@@ -145,7 +145,7 @@
 
     $paginatedPredictions = array_slice($sortedPredictions, $offset, $itemsPerPage, true);
 
-    // Mapping weather conditions to OpenWeatherMap icon codes
+    // lấy icon từ OpenWeatherMap icon codes
     $weatherIconMap = [
         'clear' => '01d',
         'clouds' => '03d',
@@ -167,7 +167,7 @@
     </div>
     <!-- Main Content -->
     <div class="container mt-5">
-        <h1 class="text-center my-4 text-primary">Dự báo thời tiết nâng cao</h1>
+        <h1 class="text-center my-4 text-primary">🌦️ Dự báo thời tiết</h1>
         <?php if (isset($_SESSION['error'])): ?>
             <div class="alert alert-danger text-center"><?php echo htmlspecialchars($_SESSION['error']); ?></div>
             <?php unset($_SESSION['error']); ?>
