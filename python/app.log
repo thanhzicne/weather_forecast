@@ -1,402 +1,229 @@
-2025-05-19 00:05:55,258 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-18', 'temperature': 26.71, 'humidity': 89, 'wind_speed': 4.55, 'condition': 'heavy intensity rain'}, {'date': '2025-05-17', 'temperature': 28.88, 'humidity': 76, 'wind_speed': 1.9, 'condition': 'overcast clouds'}, {'date': '2025-05-16', 'temperature': 30.63, 'humidity': 71, 'wind_speed': 3.65, 'condition': 'broken clouds'}, {'date': '2025-05-15', 'temperature': 25.56, 'humidity': 95, 'wind_speed': 2.82, 'condition': 'moderate rain'}, {'date': '2025-05-14', 'temperature': 30.96, 'humidity': 61, 'wind_speed': 2.95, 'condition': 'broken clouds'}, {'date': '2025-05-13', 'temperature': 29.07, 'humidity': 61, 'wind_speed': 6.08, 'condition': 'broken clouds'}, {'date': '2025-05-11', 'temperature': 26, 'humidity': 63, 'wind_speed': 2.17, 'condition': 'overcast clouds'}], 'current_temp': 25.78, 'current_humidity': 95, 'current_condition': 'moderate rain', 'current_wind_speed': 2.19, 'days_ahead': 3}
-2025-05-19 00:05:55,273 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed             condition
-0  2025-05-18        26.71        89        4.55  heavy intensity rain
-1  2025-05-17        28.88        76        1.90       overcast clouds
-2  2025-05-16        30.63        71        3.65         broken clouds
-3  2025-05-15        25.56        95        2.82         moderate rain
-4  2025-05-14        30.96        61        2.95         broken clouds
-2025-05-19 00:05:55,273 - INFO - Mapping description 'heavy intensity rain'
-2025-05-19 00:05:55,273 - INFO - Matched rain -> 'rain'
-2025-05-19 00:05:55,273 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:05:55,273 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:05:55,273 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:05:55,273 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:05:55,273 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:05:55,273 - INFO - Matched rain -> 'rain'
-2025-05-19 00:05:55,273 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:05:55,273 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:05:55,273 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:05:55,273 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:05:55,273 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:05:55,273 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:05:55,289 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
-2025-05-19 00:05:55,289 - INFO - Unique conditions after mapping: ['rain' 'clouds']
-2025-05-19 00:05:55,310 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
-num_class: Number of output class in the multi-class classification.. \u0110\u1eb7t model_condition là None.
-2025-05-19 00:05:55,817 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
-2025-05-19 00:05:55,821 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:05:55,821 - INFO - Matched rain -> 'rain'
-2025-05-19 00:05:55,831 - INFO - D\u1ef1 \u0111oán ngày 2025-05-20 00:05:55.821600: temp=29, humidity=61.05, wind=5.52, condition=unknown
-2025-05-19 00:05:55,841 - INFO - D\u1ef1 \u0111oán ngày 2025-05-21 00:05:55.821600: temp=25, humidity=71.67, wind=2.89, condition=unknown
-2025-05-19 00:05:55,849 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 00:05:55.821600: temp=30, humidity=74.07, wind=3.77, condition=unknown
-2025-05-19 00:05:55,849 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-20', 'temperature': 29, 'humidity': 61.05, 'wind_speed': 5.52, 'condition': 'unknown'}, {'date': '2025-05-21', 'temperature': 25, 'humidity': 71.67, 'wind_speed': 2.89, 'condition': 'unknown'}, {'date': '2025-05-22', 'temperature': 30, 'humidity': 74.07, 'wind_speed': 3.77, 'condition': 'unknown'}]
-2025-05-19 00:05:55,849 - INFO - 127.0.0.1 - - [19/May/2025 00:05:55] "POST /predict HTTP/1.1" 200 -
-2025-05-19 00:09:40,412 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-18', 'temperature': 26.71, 'humidity': 89, 'wind_speed': 4.55, 'condition': 'heavy intensity rain'}, {'date': '2025-05-17', 'temperature': 28.88, 'humidity': 76, 'wind_speed': 1.9, 'condition': 'overcast clouds'}, {'date': '2025-05-16', 'temperature': 30.63, 'humidity': 71, 'wind_speed': 3.65, 'condition': 'broken clouds'}, {'date': '2025-05-15', 'temperature': 25.56, 'humidity': 95, 'wind_speed': 2.82, 'condition': 'moderate rain'}, {'date': '2025-05-14', 'temperature': 30.96, 'humidity': 61, 'wind_speed': 2.95, 'condition': 'broken clouds'}, {'date': '2025-05-13', 'temperature': 29.07, 'humidity': 61, 'wind_speed': 6.08, 'condition': 'broken clouds'}, {'date': '2025-05-11', 'temperature': 26, 'humidity': 63, 'wind_speed': 2.17, 'condition': 'overcast clouds'}], 'current_temp': 25.78, 'current_humidity': 95, 'current_condition': 'moderate rain', 'current_wind_speed': 2.19, 'days_ahead': 3}
-2025-05-19 00:09:40,429 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed             condition
-0  2025-05-18        26.71        89        4.55  heavy intensity rain
-1  2025-05-17        28.88        76        1.90       overcast clouds
-2  2025-05-16        30.63        71        3.65         broken clouds
-3  2025-05-15        25.56        95        2.82         moderate rain
-4  2025-05-14        30.96        61        2.95         broken clouds
-2025-05-19 00:09:40,429 - INFO - Mapping description 'heavy intensity rain'
-2025-05-19 00:09:40,429 - INFO - Matched rain -> 'rain'
-2025-05-19 00:09:40,429 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:09:40,429 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:09:40,429 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:09:40,429 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:09:40,429 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:09:40,429 - INFO - Matched rain -> 'rain'
-2025-05-19 00:09:40,429 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:09:40,429 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:09:40,431 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:09:40,431 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:09:40,431 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:09:40,431 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:09:40,442 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
-2025-05-19 00:09:40,442 - INFO - Unique conditions after mapping: ['rain' 'clouds']
-2025-05-19 00:09:40,487 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
-num_class: Number of output class in the multi-class classification.. \u0110\u1eb7t model_condition là None.
-2025-05-19 00:09:40,914 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
-2025-05-19 00:09:40,918 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:09:40,918 - INFO - Matched rain -> 'rain'
-2025-05-19 00:09:40,925 - INFO - D\u1ef1 \u0111oán ngày 2025-05-20 00:09:40.918895: temp=29, humidity=61.05, wind=5.52, condition=unknown
-2025-05-19 00:09:40,931 - INFO - D\u1ef1 \u0111oán ngày 2025-05-21 00:09:40.918895: temp=25, humidity=71.67, wind=2.89, condition=unknown
-2025-05-19 00:09:40,936 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 00:09:40.918895: temp=30, humidity=74.07, wind=3.77, condition=unknown
-2025-05-19 00:09:40,936 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-20', 'temperature': 29, 'humidity': 61.05, 'wind_speed': 5.52, 'condition': 'unknown'}, {'date': '2025-05-21', 'temperature': 25, 'humidity': 71.67, 'wind_speed': 2.89, 'condition': 'unknown'}, {'date': '2025-05-22', 'temperature': 30, 'humidity': 74.07, 'wind_speed': 3.77, 'condition': 'unknown'}]
-2025-05-19 00:09:40,936 - INFO - 127.0.0.1 - - [19/May/2025 00:09:40] "POST /predict HTTP/1.1" 200 -
-2025-05-19 00:24:33,032 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-18', 'temperature': 30.04, 'humidity': 75, 'wind_speed': 2.24, 'condition': 'overcast clouds'}, {'date': '2025-05-17', 'temperature': 31.71, 'humidity': 69, 'wind_speed': 1.34, 'condition': 'overcast clouds'}, {'date': '2025-05-16', 'temperature': 33.93, 'humidity': 65, 'wind_speed': 2.68, 'condition': 'overcast clouds'}, {'date': '2025-05-15', 'temperature': 30.04, 'humidity': 77, 'wind_speed': 2.24, 'condition': 'overcast clouds'}, {'date': '2025-05-14', 'temperature': 33.93, 'humidity': 66, 'wind_speed': 2.24, 'condition': 'overcast clouds'}, {'date': '2025-05-13', 'temperature': 31.15, 'humidity': 70, 'wind_speed': 2.68, 'condition': 'light rain'}, {'date': '2025-05-11', 'temperature': 31.71, 'humidity': 73, 'wind_speed': 3.6, 'condition': 'few clouds'}], 'current_temp': 28.93, 'current_humidity': 79, 'current_condition': 'overcast clouds', 'current_wind_speed': 1.34, 'days_ahead': 3}
-2025-05-19 00:24:33,050 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed        condition
-0  2025-05-18        30.04        75        2.24  overcast clouds
-1  2025-05-17        31.71        69        1.34  overcast clouds
-2  2025-05-16        33.93        65        2.68  overcast clouds
-3  2025-05-15        30.04        77        2.24  overcast clouds
-4  2025-05-14        33.93        66        2.24  overcast clouds
-2025-05-19 00:24:33,050 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:24:33,050 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:24:33,050 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:24:33,050 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:24:33,050 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:24:33,050 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:24:33,050 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:24:33,050 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:24:33,050 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:24:33,050 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:24:33,050 - INFO - Mapping description 'light rain'
-2025-05-19 00:24:33,050 - INFO - Matched rain -> 'rain'
-2025-05-19 00:24:33,050 - INFO - Mapping description 'few clouds'
-2025-05-19 00:24:33,050 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:24:33,058 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
-2025-05-19 00:24:33,061 - INFO - Unique conditions after mapping: ['clouds' 'rain']
-2025-05-19 00:24:33,084 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
-num_class: Number of output class in the multi-class classification.. \u0110\u1eb7t model_condition là None.
-2025-05-19 00:24:33,491 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
-2025-05-19 00:24:33,495 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:24:33,495 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:24:33,502 - INFO - D\u1ef1 \u0111oán ngày 2025-05-20 00:24:33.495188: temp=33, humidity=68.78, wind=2.24, condition=unknown
-2025-05-19 00:24:33,511 - INFO - D\u1ef1 \u0111oán ngày 2025-05-21 00:24:33.495188: temp=30, humidity=66.12, wind=2.68, condition=unknown
-2025-05-19 00:24:33,516 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 00:24:33.495188: temp=33, humidity=75.1, wind=2.68, condition=unknown
-2025-05-19 00:24:33,518 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-20', 'temperature': 33, 'humidity': 68.78, 'wind_speed': 2.24, 'condition': 'unknown'}, {'date': '2025-05-21', 'temperature': 30, 'humidity': 66.12, 'wind_speed': 2.68, 'condition': 'unknown'}, {'date': '2025-05-22', 'temperature': 33, 'humidity': 75.1, 'wind_speed': 2.68, 'condition': 'unknown'}]
-2025-05-19 00:24:33,519 - INFO - 127.0.0.1 - - [19/May/2025 00:24:33] "POST /predict HTTP/1.1" 200 -
-2025-05-19 00:25:06,238 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-18', 'temperature': 23.65, 'humidity': 87, 'wind_speed': 1.12, 'condition': 'broken clouds'}, {'date': '2025-05-17', 'temperature': 25.55, 'humidity': 80, 'wind_speed': 0.21, 'condition': 'overcast clouds'}, {'date': '2025-05-16', 'temperature': 30.01, 'humidity': 54, 'wind_speed': 0.57, 'condition': 'overcast clouds'}, {'date': '2025-05-15', 'temperature': 22.71, 'humidity': 92, 'wind_speed': 0.77, 'condition': 'moderate rain'}, {'date': '2025-05-14', 'temperature': 32.35, 'humidity': 46, 'wind_speed': 0.71, 'condition': 'broken clouds'}, {'date': '2025-05-13', 'temperature': 27.95, 'humidity': 61, 'wind_speed': 1.38, 'condition': 'overcast clouds'}, {'date': '2025-05-11', 'temperature': 20.91, 'humidity': 83, 'wind_speed': 2.19, 'condition': 'broken clouds'}], 'current_temp': 21.44, 'current_humidity': 98, 'current_condition': 'light rain', 'current_wind_speed': 0.93, 'days_ahead': 3}
-2025-05-19 00:25:06,253 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed        condition
-0  2025-05-18        23.65        87        1.12    broken clouds
-1  2025-05-17        25.55        80        0.21  overcast clouds
-2  2025-05-16        30.01        54        0.57  overcast clouds
-3  2025-05-15        22.71        92        0.77    moderate rain
-4  2025-05-14        32.35        46        0.71    broken clouds
-2025-05-19 00:25:06,253 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:25:06,253 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:25:06,253 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:25:06,253 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:25:06,253 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:25:06,253 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:25:06,253 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:25:06,253 - INFO - Matched rain -> 'rain'
-2025-05-19 00:25:06,253 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:25:06,253 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:25:06,253 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:25:06,253 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:25:06,253 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:25:06,253 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:25:06,261 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
-2025-05-19 00:25:06,263 - INFO - Unique conditions after mapping: ['clouds' 'rain']
-2025-05-19 00:25:06,285 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
-num_class: Number of output class in the multi-class classification.. \u0110\u1eb7t model_condition là None.
-2025-05-19 00:25:06,863 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
-2025-05-19 00:25:06,868 - INFO - Mapping description 'light rain'
-2025-05-19 00:25:06,870 - INFO - Matched rain -> 'rain'
-2025-05-19 00:25:06,878 - INFO - D\u1ef1 \u0111oán ngày 2025-05-20 00:25:06.870389: temp=29, humidity=55.06, wind=0.83, condition=unknown
-2025-05-19 00:25:06,886 - INFO - D\u1ef1 \u0111oán ngày 2025-05-21 00:25:06.870389: temp=27, humidity=60.35, wind=1.12, condition=unknown
-2025-05-19 00:25:06,892 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 00:25:06.870389: temp=23, humidity=88.14, wind=0.96, condition=unknown
-2025-05-19 00:25:06,894 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-20', 'temperature': 29, 'humidity': 55.06, 'wind_speed': 0.83, 'condition': 'unknown'}, {'date': '2025-05-21', 'temperature': 27, 'humidity': 60.35, 'wind_speed': 1.12, 'condition': 'unknown'}, {'date': '2025-05-22', 'temperature': 23, 'humidity': 88.14, 'wind_speed': 0.96, 'condition': 'unknown'}]
-2025-05-19 00:25:06,894 - INFO - 127.0.0.1 - - [19/May/2025 00:25:06] "POST /predict HTTP/1.1" 200 -
-2025-05-19 00:25:42,588 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-18', 'temperature': 26.71, 'humidity': 89, 'wind_speed': 4.55, 'condition': 'heavy intensity rain'}, {'date': '2025-05-17', 'temperature': 28.88, 'humidity': 76, 'wind_speed': 1.9, 'condition': 'clear sky'}, {'date': '2025-05-16', 'temperature': 30.63, 'humidity': 71, 'wind_speed': 3.65, 'condition': 'overcast clouds'}, {'date': '2025-05-15', 'temperature': 25.56, 'humidity': 95, 'wind_speed': 2.82, 'condition': 'moderate rain'}, {'date': '2025-05-14', 'temperature': 30.96, 'humidity': 61, 'wind_speed': 2.95, 'condition': 'broken clouds'}, {'date': '2025-05-13', 'temperature': 29.07, 'humidity': 61, 'wind_speed': 6.08, 'condition': 'light snow'}, {'date': '2025-05-11', 'temperature': 26, 'humidity': 63, 'wind_speed': 2.17, 'condition': 'thunderstorm'}], 'current_temp': 25.78, 'current_humidity': 95, 'current_condition': 'heavy intensity rain', 'current_wind_speed': 2.19, 'days_ahead': 3}
-2025-05-19 00:25:42,592 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed             condition
-0  2025-05-18        26.71        89        4.55  heavy intensity rain
-1  2025-05-17        28.88        76        1.90             clear sky
-2  2025-05-16        30.63        71        3.65       overcast clouds
-3  2025-05-15        25.56        95        2.82         moderate rain
-4  2025-05-14        30.96        61        2.95         broken clouds
-2025-05-19 00:25:42,595 - INFO - Mapping description 'heavy intensity rain'
-2025-05-19 00:25:42,595 - INFO - Matched rain -> 'rain'
-2025-05-19 00:25:42,595 - INFO - Mapping description 'clear sky'
-2025-05-19 00:25:42,595 - INFO - Matched 'clear sky' -> 'clear'
-2025-05-19 00:25:42,595 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:25:42,595 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:25:42,595 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:25:42,595 - INFO - Matched rain -> 'rain'
-2025-05-19 00:25:42,595 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:25:42,595 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:25:42,595 - INFO - Mapping description 'light snow'
-2025-05-19 00:25:42,595 - INFO - Matched snow -> 'snow'
-2025-05-19 00:25:42,595 - INFO - Mapping description 'thunderstorm'
-2025-05-19 00:25:42,595 - INFO - Matched thunderstorm -> 'thunderstorm'
-2025-05-19 00:25:42,597 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
-2025-05-19 00:25:42,597 - INFO - Unique conditions after mapping: ['rain' 'clear' 'clouds' 'snow' 'thunderstorm']
-2025-05-19 00:25:42,670 - INFO - Hu\u1ea5n luy\u1ec7n model_condition v\u1edbi 5 l\u1edbp: ['clear' 'clouds' 'rain' 'snow' 'thunderstorm']
-2025-05-19 00:25:42,852 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
-2025-05-19 00:25:42,854 - INFO - Mapping description 'heavy intensity rain'
-2025-05-19 00:25:42,854 - INFO - Matched rain -> 'rain'
-2025-05-19 00:25:42,860 - INFO - D\u1ef1 \u0111oán ngày 2025-05-20 00:25:42.854085: temp=29, humidity=61.05, wind=5.52, condition=clouds
-2025-05-19 00:25:42,864 - INFO - D\u1ef1 \u0111oán ngày 2025-05-21 00:25:42.854085: temp=25, humidity=71.67, wind=2.89, condition=rain
-2025-05-19 00:25:42,866 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 00:25:42.854085: temp=30, humidity=74.07, wind=3.77, condition=rain
-2025-05-19 00:25:42,866 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-20', 'temperature': 29, 'humidity': 61.05, 'wind_speed': 5.52, 'condition': 'clouds'}, {'date': '2025-05-21', 'temperature': 25, 'humidity': 71.67, 'wind_speed': 2.89, 'condition': 'rain'}, {'date': '2025-05-22', 'temperature': 30, 'humidity': 74.07, 'wind_speed': 3.77, 'condition': 'rain'}]
-2025-05-19 00:25:42,866 - INFO - 127.0.0.1 - - [19/May/2025 00:25:42] "POST /predict HTTP/1.1" 200 -
-2025-05-19 00:25:45,702 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-18', 'temperature': 26.71, 'humidity': 89, 'wind_speed': 4.55, 'condition': 'heavy intensity rain'}, {'date': '2025-05-17', 'temperature': 28.88, 'humidity': 76, 'wind_speed': 1.9, 'condition': 'clear sky'}, {'date': '2025-05-16', 'temperature': 30.63, 'humidity': 71, 'wind_speed': 3.65, 'condition': 'overcast clouds'}, {'date': '2025-05-15', 'temperature': 25.56, 'humidity': 95, 'wind_speed': 2.82, 'condition': 'moderate rain'}, {'date': '2025-05-14', 'temperature': 30.96, 'humidity': 61, 'wind_speed': 2.95, 'condition': 'broken clouds'}, {'date': '2025-05-13', 'temperature': 29.07, 'humidity': 61, 'wind_speed': 6.08, 'condition': 'light snow'}, {'date': '2025-05-11', 'temperature': 26, 'humidity': 63, 'wind_speed': 2.17, 'condition': 'thunderstorm'}], 'current_temp': 25.78, 'current_humidity': 95, 'current_condition': 'heavy intensity rain', 'current_wind_speed': 2.19, 'days_ahead': 3}
-2025-05-19 00:25:45,708 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed             condition
-0  2025-05-18        26.71        89        4.55  heavy intensity rain
-1  2025-05-17        28.88        76        1.90             clear sky
-2  2025-05-16        30.63        71        3.65       overcast clouds
-3  2025-05-15        25.56        95        2.82         moderate rain
-4  2025-05-14        30.96        61        2.95         broken clouds
-2025-05-19 00:25:45,708 - INFO - Mapping description 'heavy intensity rain'
-2025-05-19 00:25:45,708 - INFO - Matched rain -> 'rain'
-2025-05-19 00:25:45,708 - INFO - Mapping description 'clear sky'
-2025-05-19 00:25:45,708 - INFO - Matched 'clear sky' -> 'clear'
-2025-05-19 00:25:45,708 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:25:45,708 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:25:45,708 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:25:45,708 - INFO - Matched rain -> 'rain'
-2025-05-19 00:25:45,708 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:25:45,708 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:25:45,708 - INFO - Mapping description 'light snow'
-2025-05-19 00:25:45,708 - INFO - Matched snow -> 'snow'
-2025-05-19 00:25:45,708 - INFO - Mapping description 'thunderstorm'
-2025-05-19 00:25:45,708 - INFO - Matched thunderstorm -> 'thunderstorm'
-2025-05-19 00:25:45,710 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
-2025-05-19 00:25:45,710 - INFO - Unique conditions after mapping: ['rain' 'clear' 'clouds' 'snow' 'thunderstorm']
-2025-05-19 00:25:45,798 - INFO - Hu\u1ea5n luy\u1ec7n model_condition v\u1edbi 5 l\u1edbp: ['clear' 'clouds' 'rain' 'snow' 'thunderstorm']
-2025-05-19 00:25:46,000 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
-2025-05-19 00:25:46,002 - INFO - Mapping description 'heavy intensity rain'
-2025-05-19 00:25:46,002 - INFO - Matched rain -> 'rain'
-2025-05-19 00:25:46,006 - INFO - D\u1ef1 \u0111oán ngày 2025-05-20 00:25:46.002149: temp=29, humidity=61.05, wind=5.52, condition=clouds
-2025-05-19 00:25:46,010 - INFO - D\u1ef1 \u0111oán ngày 2025-05-21 00:25:46.002149: temp=25, humidity=71.67, wind=2.89, condition=rain
-2025-05-19 00:25:46,014 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 00:25:46.002149: temp=30, humidity=74.07, wind=3.77, condition=rain
-2025-05-19 00:25:46,014 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-20', 'temperature': 29, 'humidity': 61.05, 'wind_speed': 5.52, 'condition': 'clouds'}, {'date': '2025-05-21', 'temperature': 25, 'humidity': 71.67, 'wind_speed': 2.89, 'condition': 'rain'}, {'date': '2025-05-22', 'temperature': 30, 'humidity': 74.07, 'wind_speed': 3.77, 'condition': 'rain'}]
-2025-05-19 00:25:46,014 - INFO - 127.0.0.1 - - [19/May/2025 00:25:46] "POST /predict HTTP/1.1" 200 -
-2025-05-19 00:40:04,364 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-18', 'temperature': 25.54, 'humidity': 95, 'wind_speed': 1.96, 'condition': 'moderate rain'}, {'date': '2025-05-17', 'temperature': 28.88, 'humidity': 76, 'wind_speed': 1.9, 'condition': 'overcast clouds'}, {'date': '2025-05-16', 'temperature': 30.63, 'humidity': 71, 'wind_speed': 3.65, 'condition': 'broken clouds'}, {'date': '2025-05-15', 'temperature': 25.56, 'humidity': 95, 'wind_speed': 2.82, 'condition': 'moderate rain'}, {'date': '2025-05-14', 'temperature': 30.96, 'humidity': 61, 'wind_speed': 2.95, 'condition': 'broken clouds'}, {'date': '2025-05-13', 'temperature': 29.07, 'humidity': 61, 'wind_speed': 6.08, 'condition': 'broken clouds'}, {'date': '2025-05-11', 'temperature': 26, 'humidity': 63, 'wind_speed': 2.17, 'condition': 'overcast clouds'}], 'current_temp': 25.54, 'current_humidity': 95, 'current_condition': 'moderate rain', 'current_wind_speed': 1.96, 'days_ahead': 3}
-2025-05-19 00:40:04,382 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed        condition
-0  2025-05-18        25.54        95        1.96    moderate rain
-1  2025-05-17        28.88        76        1.90  overcast clouds
-2  2025-05-16        30.63        71        3.65    broken clouds
-3  2025-05-15        25.56        95        2.82    moderate rain
-4  2025-05-14        30.96        61        2.95    broken clouds
-2025-05-19 00:40:04,382 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:40:04,382 - INFO - Matched rain -> 'rain'
-2025-05-19 00:40:04,384 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:40:04,384 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:40:04,384 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:40:04,384 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:40:04,384 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:40:04,384 - INFO - Matched rain -> 'rain'
-2025-05-19 00:40:04,384 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:40:04,384 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:40:04,384 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:40:04,384 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:40:04,384 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:40:04,384 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:40:04,391 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
-2025-05-19 00:40:04,391 - INFO - Unique conditions after mapping: ['rain' 'clouds']
-2025-05-19 00:40:04,416 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
-num_class: Number of output class in the multi-class classification.. \u0110\u1eb7t model_condition là None.
-2025-05-19 00:40:04,936 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
-2025-05-19 00:40:04,938 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:40:04,938 - INFO - Matched rain -> 'rain'
-2025-05-19 00:40:04,946 - INFO - D\u1ef1 \u0111oán ngày 2025-05-20 00:40:04.938535: temp=29, humidity=61.12, wind=6.06, condition=unknown
-2025-05-19 00:40:04,952 - INFO - D\u1ef1 \u0111oán ngày 2025-05-21 00:40:04.938535: temp=26, humidity=62.73, wind=2.95, condition=unknown
-2025-05-19 00:40:04,960 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 00:40:04.938535: temp=30, humidity=66.86, wind=2.7, condition=unknown
-2025-05-19 00:40:04,960 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-20', 'temperature': 29, 'humidity': 61.12, 'wind_speed': 6.06, 'condition': 'unknown'}, {'date': '2025-05-21', 'temperature': 26, 'humidity': 62.73, 'wind_speed': 2.95, 'condition': 'unknown'}, {'date': '2025-05-22', 'temperature': 30, 'humidity': 66.86, 'wind_speed': 2.7, 'condition': 'unknown'}]
-2025-05-19 00:40:04,960 - INFO - 127.0.0.1 - - [19/May/2025 00:40:04] "POST /predict HTTP/1.1" 200 -
-2025-05-19 00:40:17,259 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-18', 'temperature': 25.54, 'humidity': 95, 'wind_speed': 1.96, 'condition': 'moderate rain'}, {'date': '2025-05-17', 'temperature': 28.88, 'humidity': 76, 'wind_speed': 1.9, 'condition': 'overcast clouds'}, {'date': '2025-05-16', 'temperature': 30.63, 'humidity': 71, 'wind_speed': 3.65, 'condition': 'broken clouds'}, {'date': '2025-05-15', 'temperature': 25.56, 'humidity': 95, 'wind_speed': 2.82, 'condition': 'moderate rain'}, {'date': '2025-05-14', 'temperature': 30.96, 'humidity': 61, 'wind_speed': 2.95, 'condition': 'broken clouds'}, {'date': '2025-05-13', 'temperature': 29.07, 'humidity': 61, 'wind_speed': 6.08, 'condition': 'broken clouds'}, {'date': '2025-05-11', 'temperature': 26, 'humidity': 63, 'wind_speed': 2.17, 'condition': 'overcast clouds'}], 'current_temp': 25.54, 'current_humidity': 95, 'current_condition': 'moderate rain', 'current_wind_speed': 1.96, 'days_ahead': 3}
-2025-05-19 00:40:17,273 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed        condition
-0  2025-05-18        25.54        95        1.96    moderate rain
-1  2025-05-17        28.88        76        1.90  overcast clouds
-2  2025-05-16        30.63        71        3.65    broken clouds
-3  2025-05-15        25.56        95        2.82    moderate rain
-4  2025-05-14        30.96        61        2.95    broken clouds
-2025-05-19 00:40:17,273 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:40:17,273 - INFO - Matched rain -> 'rain'
-2025-05-19 00:40:17,273 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:40:17,273 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:40:17,273 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:40:17,273 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:40:17,273 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:40:17,273 - INFO - Matched rain -> 'rain'
-2025-05-19 00:40:17,273 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:40:17,273 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:40:17,273 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:40:17,273 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:40:17,273 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:40:17,273 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:40:17,280 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
-2025-05-19 00:40:17,280 - INFO - Unique conditions after mapping: ['rain' 'clouds']
-2025-05-19 00:40:17,296 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
-num_class: Number of output class in the multi-class classification.. \u0110\u1eb7t model_condition là None.
-2025-05-19 00:40:17,757 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
-2025-05-19 00:40:17,760 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:40:17,760 - INFO - Matched rain -> 'rain'
-2025-05-19 00:40:17,770 - INFO - D\u1ef1 \u0111oán ngày 2025-05-20 00:40:17.760696: temp=29, humidity=61.12, wind=6.06, condition=unknown
-2025-05-19 00:40:17,778 - INFO - D\u1ef1 \u0111oán ngày 2025-05-21 00:40:17.760696: temp=26, humidity=62.73, wind=2.95, condition=unknown
-2025-05-19 00:40:17,784 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 00:40:17.760696: temp=30, humidity=66.86, wind=2.7, condition=unknown
-2025-05-19 00:40:17,786 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-20', 'temperature': 29, 'humidity': 61.12, 'wind_speed': 6.06, 'condition': 'unknown'}, {'date': '2025-05-21', 'temperature': 26, 'humidity': 62.73, 'wind_speed': 2.95, 'condition': 'unknown'}, {'date': '2025-05-22', 'temperature': 30, 'humidity': 66.86, 'wind_speed': 2.7, 'condition': 'unknown'}]
-2025-05-19 00:40:17,786 - INFO - 127.0.0.1 - - [19/May/2025 00:40:17] "POST /predict HTTP/1.1" 200 -
-2025-05-19 00:41:17,494 - INFO -  * Detected change in 'D:\\laragon\\www\\weather_forecast\\python\\xgboost_weather_predictor.py', reloading
-2025-05-19 00:41:17,789 - INFO -  * Restarting with stat
-2025-05-19 00:41:43,679 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-05-21 18:43:41,587 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
- * Running on http://192.168.2.100:5000
-2025-05-19 00:41:43,679 - INFO - [33mPress CTRL+C to quit[0m
-2025-05-19 00:41:43,684 - INFO -  * Restarting with stat
-2025-05-19 00:41:45,337 - WARNING -  * Debugger is active!
-2025-05-19 00:41:45,337 - INFO -  * Debugger PIN: 365-830-856
-2025-05-19 00:41:45,345 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-18', 'temperature': 26.71, 'humidity': 89, 'wind_speed': 4.55, 'condition': 'heavy intensity rain'}, {'date': '2025-05-17', 'temperature': 28.88, 'humidity': 76, 'wind_speed': 1.9, 'condition': 'clear sky'}, {'date': '2025-05-16', 'temperature': 30.63, 'humidity': 71, 'wind_speed': 3.65, 'condition': 'overcast clouds'}, {'date': '2025-05-15', 'temperature': 25.56, 'humidity': 95, 'wind_speed': 2.82, 'condition': 'moderate rain'}, {'date': '2025-05-14', 'temperature': 30.96, 'humidity': 61, 'wind_speed': 2.95, 'condition': 'broken clouds'}, {'date': '2025-05-13', 'temperature': 29.07, 'humidity': 61, 'wind_speed': 6.08, 'condition': 'light snow'}, {'date': '2025-05-11', 'temperature': 26, 'humidity': 63, 'wind_speed': 2.17, 'condition': 'thunderstorm'}], 'current_temp': 25.78, 'current_humidity': 95, 'current_condition': 'heavy intensity rain', 'current_wind_speed': 2.19, 'days_ahead': 3}
-2025-05-19 00:41:45,349 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed             condition
-0  2025-05-18        26.71        89        4.55  heavy intensity rain
-1  2025-05-17        28.88        76        1.90             clear sky
-2  2025-05-16        30.63        71        3.65       overcast clouds
-3  2025-05-15        25.56        95        2.82         moderate rain
-4  2025-05-14        30.96        61        2.95         broken clouds
-2025-05-19 00:41:45,349 - INFO - Mapping description 'heavy intensity rain'
-2025-05-19 00:41:45,349 - INFO - Matched rain -> 'rain'
-2025-05-19 00:41:45,349 - INFO - Mapping description 'clear sky'
-2025-05-19 00:41:45,349 - INFO - Matched 'clear sky' -> 'clear'
-2025-05-19 00:41:45,349 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:41:45,349 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:41:45,356 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:41:45,356 - INFO - Matched rain -> 'rain'
-2025-05-19 00:41:45,356 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:41:45,356 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:41:45,356 - INFO - Mapping description 'light snow'
-2025-05-19 00:41:45,356 - INFO - Matched snow -> 'snow'
-2025-05-19 00:41:45,356 - INFO - Mapping description 'thunderstorm'
-2025-05-19 00:41:45,356 - INFO - Matched thunderstorm -> 'thunderstorm'
-2025-05-19 00:41:45,358 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
-2025-05-19 00:41:45,358 - INFO - Unique conditions after mapping: ['rain' 'clear' 'clouds' 'snow' 'thunderstorm']
-2025-05-19 00:41:45,449 - INFO - Hu\u1ea5n luy\u1ec7n model_condition v\u1edbi 5 l\u1edbp: ['clear' 'clouds' 'rain' 'snow' 'thunderstorm']
-2025-05-19 00:41:45,612 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
-2025-05-19 00:41:45,612 - INFO - Mapping description 'heavy intensity rain'
-2025-05-19 00:41:45,612 - INFO - Matched rain -> 'rain'
-2025-05-19 00:41:45,618 - INFO - D\u1ef1 \u0111oán ngày 2025-05-20 00:41:45.612051: temp=29, humidity=61.05, wind=5.52, condition=clouds
-2025-05-19 00:41:45,621 - INFO - D\u1ef1 \u0111oán ngày 2025-05-21 00:41:45.612051: temp=26, humidity=71.67, wind=2.89, condition=rain
-2025-05-19 00:41:45,623 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 00:41:45.612051: temp=31, humidity=74.07, wind=3.77, condition=rain
-2025-05-19 00:41:45,623 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-20', 'temperature': 29, 'humidity': 61.05, 'wind_speed': 5.52, 'condition': 'clouds'}, {'date': '2025-05-21', 'temperature': 26, 'humidity': 71.67, 'wind_speed': 2.89, 'condition': 'rain'}, {'date': '2025-05-22', 'temperature': 31, 'humidity': 74.07, 'wind_speed': 3.77, 'condition': 'rain'}]
-2025-05-19 00:41:45,623 - INFO - 127.0.0.1 - - [19/May/2025 00:41:45] "POST /predict HTTP/1.1" 200 -
-2025-05-19 00:41:55,991 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-18', 'temperature': 25.54, 'humidity': 95, 'wind_speed': 1.96, 'condition': 'moderate rain'}, {'date': '2025-05-17', 'temperature': 28.88, 'humidity': 76, 'wind_speed': 1.9, 'condition': 'overcast clouds'}, {'date': '2025-05-16', 'temperature': 30.63, 'humidity': 71, 'wind_speed': 3.65, 'condition': 'broken clouds'}, {'date': '2025-05-15', 'temperature': 25.56, 'humidity': 95, 'wind_speed': 2.82, 'condition': 'moderate rain'}, {'date': '2025-05-14', 'temperature': 30.96, 'humidity': 61, 'wind_speed': 2.95, 'condition': 'broken clouds'}, {'date': '2025-05-13', 'temperature': 29.07, 'humidity': 61, 'wind_speed': 6.08, 'condition': 'broken clouds'}, {'date': '2025-05-11', 'temperature': 26, 'humidity': 63, 'wind_speed': 2.17, 'condition': 'overcast clouds'}], 'current_temp': 25.54, 'current_humidity': 95, 'current_condition': 'moderate rain', 'current_wind_speed': 1.96, 'days_ahead': 3}
-2025-05-19 00:41:56,012 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed        condition
-0  2025-05-18        25.54        95        1.96    moderate rain
-1  2025-05-17        28.88        76        1.90  overcast clouds
-2  2025-05-16        30.63        71        3.65    broken clouds
-3  2025-05-15        25.56        95        2.82    moderate rain
-4  2025-05-14        30.96        61        2.95    broken clouds
-2025-05-19 00:41:56,015 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:41:56,015 - INFO - Matched rain -> 'rain'
-2025-05-19 00:41:56,015 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:41:56,015 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:41:56,015 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:41:56,015 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:41:56,015 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:41:56,015 - INFO - Matched rain -> 'rain'
-2025-05-19 00:41:56,015 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:41:56,015 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:41:56,015 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:41:56,015 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:41:56,015 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:41:56,015 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:41:56,026 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
-2025-05-19 00:41:56,026 - INFO - Unique conditions after mapping: ['rain' 'clouds']
-2025-05-19 00:41:56,054 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
+ * Running on http://172.16.17.51:5000
+2025-05-21 18:43:41,587 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 18:43:41,587 - INFO -  * Restarting with stat
+2025-05-21 18:43:42,800 - WARNING -  * Debugger is active!
+2025-05-21 18:43:42,801 - INFO -  * Debugger PIN: 137-803-718
+2025-05-21 18:43:49,976 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-21', 'temperature': 33, 'humidity': 64, 'wind_speed': 6.21, 'condition': 'overcast clouds'}, {'date': '2025-05-20', 'temperature': 27.32, 'humidity': 83, 'wind_speed': 6.01, 'condition': 'overcast clouds'}, {'date': '2025-05-18', 'temperature': 25.54, 'humidity': 95, 'wind_speed': 1.96, 'condition': 'moderate rain'}, {'date': '2025-05-17', 'temperature': 28.88, 'humidity': 76, 'wind_speed': 1.9, 'condition': 'overcast clouds'}, {'date': '2025-05-16', 'temperature': 30.63, 'humidity': 71, 'wind_speed': 3.65, 'condition': 'broken clouds'}, {'date': '2025-05-15', 'temperature': 25.56, 'humidity': 95, 'wind_speed': 2.82, 'condition': 'moderate rain'}, {'date': '2025-05-14', 'temperature': 30.96, 'humidity': 61, 'wind_speed': 2.95, 'condition': 'broken clouds'}], 'current_temp': 31, 'current_humidity': 79, 'current_condition': 'overcast clouds', 'current_wind_speed': 5.8, 'days_ahead': 3}
+2025-05-21 18:43:49,996 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed        condition
+0  2025-05-21        33.00        64        6.21  overcast clouds
+1  2025-05-20        27.32        83        6.01  overcast clouds
+2  2025-05-18        25.54        95        1.96    moderate rain
+3  2025-05-17        28.88        76        1.90  overcast clouds
+4  2025-05-16        30.63        71        3.65    broken clouds
+2025-05-21 18:43:49,996 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:43:49,996 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:43:49,996 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:43:49,996 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:43:49,996 - INFO - Mapping description 'moderate rain'
+2025-05-21 18:43:49,996 - INFO - Matched rain -> 'rain'
+2025-05-21 18:43:49,996 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:43:49,996 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:43:49,998 - INFO - Mapping description 'broken clouds'
+2025-05-21 18:43:49,998 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:43:49,998 - INFO - Mapping description 'moderate rain'
+2025-05-21 18:43:49,998 - INFO - Matched rain -> 'rain'
+2025-05-21 18:43:49,998 - INFO - Mapping description 'broken clouds'
+2025-05-21 18:43:49,998 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:43:50,001 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
+2025-05-21 18:43:50,001 - INFO - Unique conditions after mapping: ['clouds' 'rain']
+2025-05-21 18:43:50,017 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
 num_class: Number of output class in the multi-class classification.. \u0110\u1eb7t model_condition là None.
-2025-05-19 00:41:56,652 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
-2025-05-19 00:41:56,657 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:41:56,657 - INFO - Matched rain -> 'rain'
-2025-05-19 00:41:56,667 - INFO - D\u1ef1 \u0111oán ngày 2025-05-20 00:41:56.659156: temp=29, humidity=61.12, wind=6.06, condition=unknown
-2025-05-19 00:41:56,676 - INFO - D\u1ef1 \u0111oán ngày 2025-05-21 00:41:56.659156: temp=26, humidity=62.73, wind=2.95, condition=unknown
-2025-05-19 00:41:56,684 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 00:41:56.659156: temp=31, humidity=66.86, wind=2.7, condition=unknown
-2025-05-19 00:41:56,686 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-20', 'temperature': 29, 'humidity': 61.12, 'wind_speed': 6.06, 'condition': 'unknown'}, {'date': '2025-05-21', 'temperature': 26, 'humidity': 62.73, 'wind_speed': 2.95, 'condition': 'unknown'}, {'date': '2025-05-22', 'temperature': 31, 'humidity': 66.86, 'wind_speed': 2.7, 'condition': 'unknown'}]
-2025-05-19 00:41:56,686 - INFO - 127.0.0.1 - - [19/May/2025 00:41:56] "POST /predict HTTP/1.1" 200 -
-2025-05-19 00:42:13,524 - INFO -  * Detected change in 'D:\\laragon\\www\\weather_forecast\\python\\xgboost_weather_predictor.py', reloading
-2025-05-19 00:42:13,965 - INFO -  * Restarting with stat
-2025-05-19 00:42:47,698 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.2.100:5000
-2025-05-19 00:42:47,698 - INFO - [33mPress CTRL+C to quit[0m
-2025-05-19 00:42:47,699 - INFO -  * Restarting with stat
-2025-05-19 00:42:49,805 - WARNING -  * Debugger is active!
-2025-05-19 00:42:49,812 - INFO -  * Debugger PIN: 365-830-856
-2025-05-19 00:42:49,934 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-18', 'temperature': 25.54, 'humidity': 95, 'wind_speed': 1.96, 'condition': 'moderate rain'}, {'date': '2025-05-17', 'temperature': 28.88, 'humidity': 76, 'wind_speed': 1.9, 'condition': 'overcast clouds'}, {'date': '2025-05-16', 'temperature': 30.63, 'humidity': 71, 'wind_speed': 3.65, 'condition': 'broken clouds'}, {'date': '2025-05-15', 'temperature': 25.56, 'humidity': 95, 'wind_speed': 2.82, 'condition': 'moderate rain'}, {'date': '2025-05-14', 'temperature': 30.96, 'humidity': 61, 'wind_speed': 2.95, 'condition': 'broken clouds'}, {'date': '2025-05-13', 'temperature': 29.07, 'humidity': 61, 'wind_speed': 6.08, 'condition': 'broken clouds'}, {'date': '2025-05-11', 'temperature': 26, 'humidity': 63, 'wind_speed': 2.17, 'condition': 'overcast clouds'}], 'current_temp': 25.54, 'current_humidity': 95, 'current_condition': 'moderate rain', 'current_wind_speed': 1.96, 'days_ahead': 3}
-2025-05-19 00:42:49,948 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed        condition
-0  2025-05-18        25.54        95        1.96    moderate rain
-1  2025-05-17        28.88        76        1.90  overcast clouds
-2  2025-05-16        30.63        71        3.65    broken clouds
-3  2025-05-15        25.56        95        2.82    moderate rain
-4  2025-05-14        30.96        61        2.95    broken clouds
-2025-05-19 00:42:49,948 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:42:49,948 - INFO - Matched rain -> 'rain'
-2025-05-19 00:42:49,948 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:42:49,948 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:42:49,948 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:42:49,948 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:42:49,948 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:42:49,948 - INFO - Matched rain -> 'rain'
-2025-05-19 00:42:49,948 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:42:49,948 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:42:49,948 - INFO - Mapping description 'broken clouds'
-2025-05-19 00:42:49,948 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:42:49,948 - INFO - Mapping description 'overcast clouds'
-2025-05-19 00:42:49,948 - INFO - Matched clouds -> 'clouds'
-2025-05-19 00:42:49,955 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
-2025-05-19 00:42:49,955 - INFO - Unique conditions after mapping: ['rain' 'clouds']
-2025-05-19 00:42:49,975 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
+2025-05-21 18:43:50,095 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
+2025-05-21 18:43:50,097 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:43:50,097 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:43:50,099 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 18:43:50.097127: temp=25, humidity=94.98, wind=2.82, condition=unknown
+2025-05-21 18:43:50,101 - INFO - D\u1ef1 \u0111oán ngày 2025-05-23 18:43:50.097127: temp=30, humidity=71.02, wind=2.0, condition=unknown
+2025-05-21 18:43:50,102 - INFO - D\u1ef1 \u0111oán ngày 2025-05-24 18:43:50.097127: temp=28, humidity=76.01, wind=3.04, condition=unknown
+2025-05-21 18:43:50,103 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-22', 'temperature': 25, 'humidity': 94.98, 'wind_speed': 2.82, 'condition': 'unknown'}, {'date': '2025-05-23', 'temperature': 30, 'humidity': 71.02, 'wind_speed': 2.0, 'condition': 'unknown'}, {'date': '2025-05-24', 'temperature': 28, 'humidity': 76.01, 'wind_speed': 3.04, 'condition': 'unknown'}]
+2025-05-21 18:43:50,103 - INFO - 127.0.0.1 - - [21/May/2025 18:43:50] "POST /predict HTTP/1.1" 200 -
+2025-05-21 18:44:16,560 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-21', 'temperature': 32, 'humidity': 68, 'wind_speed': 3.49, 'condition': 'light rain'}, {'date': '2025-05-20', 'temperature': 27.03, 'humidity': 81, 'wind_speed': 1.15, 'condition': 'broken clouds'}, {'date': '2025-05-18', 'temperature': 25.98, 'humidity': 87, 'wind_speed': 1.89, 'condition': 'broken clouds'}], 'current_temp': 30, 'current_humidity': 80, 'current_condition': 'broken clouds', 'current_wind_speed': 2.06, 'days_ahead': 3}
+2025-05-21 18:44:16,560 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed      condition
+0  2025-05-21        32.00        68        3.49     light rain
+1  2025-05-20        27.03        81        1.15  broken clouds
+2  2025-05-18        25.98        87        1.89  broken clouds
+2025-05-21 18:44:16,560 - INFO - Mapping description 'light rain'
+2025-05-21 18:44:16,560 - INFO - Matched rain -> 'rain'
+2025-05-21 18:44:16,560 - INFO - Mapping description 'broken clouds'
+2025-05-21 18:44:16,560 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:44:16,560 - INFO - Mapping description 'broken clouds'
+2025-05-21 18:44:16,560 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:44:16,574 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
+2025-05-21 18:44:16,574 - INFO - Unique conditions after mapping: ['rain' 'clouds']
+2025-05-21 18:44:16,588 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
 num_class: Number of output class in the multi-class classification.. \u0110\u1eb7t model_condition là None.
-2025-05-19 00:42:50,311 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
-2025-05-19 00:42:50,315 - INFO - Mapping description 'moderate rain'
-2025-05-19 00:42:50,315 - INFO - Matched rain -> 'rain'
-2025-05-19 00:42:50,321 - INFO - D\u1ef1 \u0111oán ngày 2025-05-20 00:42:50.315708: temp=29.27, humidity=61.12, wind=6.06, condition=unknown
-2025-05-19 00:42:50,327 - INFO - D\u1ef1 \u0111oán ngày 2025-05-21 00:42:50.315708: temp=26.0, humidity=62.73, wind=2.95, condition=unknown
-2025-05-19 00:42:50,333 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 00:42:50.315708: temp=30.73, humidity=66.86, wind=2.7, condition=unknown
-2025-05-19 00:42:50,335 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-20', 'temperature': 29.27, 'humidity': 61.12, 'wind_speed': 6.06, 'condition': 'unknown'}, {'date': '2025-05-21', 'temperature': 26.0, 'humidity': 62.73, 'wind_speed': 2.95, 'condition': 'unknown'}, {'date': '2025-05-22', 'temperature': 30.73, 'humidity': 66.86, 'wind_speed': 2.7, 'condition': 'unknown'}]
-2025-05-19 00:42:50,335 - INFO - 127.0.0.1 - - [19/May/2025 00:42:50] "POST /predict HTTP/1.1" 200 -
-2025-05-19 00:43:34,147 - INFO -  * Detected change in 'D:\\laragon\\www\\weather_forecast\\python\\xgboost_weather_predictor.py', reloading
-2025-05-19 00:43:34,589 - INFO -  * Restarting with stat
-2025-05-19 00:43:36,755 - WARNING -  * Debugger is active!
-2025-05-19 00:43:36,755 - INFO -  * Debugger PIN: 365-830-856
-2025-05-19 00:43:39,785 - INFO -  * Detected change in 'D:\\laragon\\www\\weather_forecast\\python\\xgboost_weather_predictor.py', reloading
-2025-05-19 00:43:40,022 - INFO -  * Restarting with stat
-2025-05-19 00:43:42,079 - WARNING -  * Debugger is active!
-2025-05-19 00:43:42,079 - INFO -  * Debugger PIN: 365-830-856
-2025-05-19 00:43:43,095 - INFO -  * Detected change in 'D:\\laragon\\www\\weather_forecast\\python\\xgboost_weather_predictor.py', reloading
-2025-05-19 00:43:43,302 - INFO -  * Restarting with stat
-2025-05-19 00:43:45,135 - WARNING -  * Debugger is active!
-2025-05-19 00:43:45,135 - INFO -  * Debugger PIN: 365-830-856
-2025-05-19 00:43:46,157 - INFO -  * Detected change in 'D:\\laragon\\www\\weather_forecast\\python\\xgboost_weather_predictor.py', reloading
-2025-05-19 00:43:46,406 - INFO -  * Restarting with stat
-2025-05-19 00:44:08,956 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.2.100:5000
-2025-05-19 00:44:08,956 - INFO - [33mPress CTRL+C to quit[0m
-2025-05-19 00:44:08,959 - INFO -  * Restarting with stat
-2025-05-19 00:44:11,450 - WARNING -  * Debugger is active!
-2025-05-19 00:44:11,454 - INFO -  * Debugger PIN: 365-830-856
+2025-05-21 18:44:16,669 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
+2025-05-21 18:44:16,670 - INFO - Mapping description 'broken clouds'
+2025-05-21 18:44:16,670 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:44:16,673 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 18:44:16.670725: temp=31, humidity=68.06, wind=3.48, condition=unknown
+2025-05-21 18:44:16,676 - INFO - D\u1ef1 \u0111oán ngày 2025-05-23 18:44:16.670725: temp=31, humidity=68.06, wind=3.48, condition=unknown
+2025-05-21 18:44:16,678 - INFO - D\u1ef1 \u0111oán ngày 2025-05-24 18:44:16.670725: temp=31, humidity=68.06, wind=3.48, condition=unknown
+2025-05-21 18:44:16,678 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-22', 'temperature': 31, 'humidity': 68.06, 'wind_speed': 3.48, 'condition': 'unknown'}, {'date': '2025-05-23', 'temperature': 31, 'humidity': 68.06, 'wind_speed': 3.48, 'condition': 'unknown'}, {'date': '2025-05-24', 'temperature': 31, 'humidity': 68.06, 'wind_speed': 3.48, 'condition': 'unknown'}]
+2025-05-21 18:44:16,678 - INFO - 127.0.0.1 - - [21/May/2025 18:44:16] "POST /predict HTTP/1.1" 200 -
+2025-05-21 18:45:29,652 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-21', 'temperature': 31.71, 'humidity': 68, 'wind_speed': 2.68, 'condition': 'light rain'}, {'date': '2025-05-20', 'temperature': 29.48, 'humidity': 75, 'wind_speed': 0.89, 'condition': 'broken clouds'}, {'date': '2025-05-18', 'temperature': 28.37, 'humidity': 80, 'wind_speed': 3.13, 'condition': 'overcast clouds'}, {'date': '2025-05-17', 'temperature': 31.71, 'humidity': 69, 'wind_speed': 1.34, 'condition': 'overcast clouds'}, {'date': '2025-05-16', 'temperature': 33.93, 'humidity': 65, 'wind_speed': 2.68, 'condition': 'overcast clouds'}, {'date': '2025-05-15', 'temperature': 30.04, 'humidity': 77, 'wind_speed': 2.24, 'condition': 'overcast clouds'}, {'date': '2025-05-14', 'temperature': 33.93, 'humidity': 66, 'wind_speed': 2.24, 'condition': 'overcast clouds'}], 'current_temp': 27.82, 'current_humidity': 79, 'current_condition': 'moderate rain', 'current_wind_speed': 1.54, 'days_ahead': 3}
+2025-05-21 18:45:29,652 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed        condition
+0  2025-05-21        31.71        68        2.68       light rain
+1  2025-05-20        29.48        75        0.89    broken clouds
+2  2025-05-18        28.37        80        3.13  overcast clouds
+3  2025-05-17        31.71        69        1.34  overcast clouds
+4  2025-05-16        33.93        65        2.68  overcast clouds
+2025-05-21 18:45:29,652 - INFO - Mapping description 'light rain'
+2025-05-21 18:45:29,652 - INFO - Matched rain -> 'rain'
+2025-05-21 18:45:29,652 - INFO - Mapping description 'broken clouds'
+2025-05-21 18:45:29,652 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:45:29,652 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:45:29,668 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:45:29,668 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:45:29,669 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:45:29,669 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:45:29,669 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:45:29,669 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:45:29,669 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:45:29,669 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:45:29,670 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:45:29,670 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
+2025-05-21 18:45:29,670 - INFO - Unique conditions after mapping: ['rain' 'clouds']
+2025-05-21 18:45:29,700 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
+num_class: Number of output class in the multi-class classification.. \u0110\u1eb7t model_condition là None.
+2025-05-21 18:45:30,044 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
+2025-05-21 18:45:30,047 - INFO - Mapping description 'moderate rain'
+2025-05-21 18:45:30,047 - INFO - Matched rain -> 'rain'
+2025-05-21 18:45:30,055 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 18:45:30.047656: temp=32, humidity=67.19, wind=2.31, condition=unknown
+2025-05-21 18:45:30,061 - INFO - D\u1ef1 \u0111oán ngày 2025-05-23 18:45:30.047656: temp=31, humidity=76.97, wind=2.56, condition=unknown
+2025-05-21 18:45:30,067 - INFO - D\u1ef1 \u0111oán ngày 2025-05-24 18:45:30.047656: temp=30, humidity=69.01, wind=2.55, condition=unknown
+2025-05-21 18:45:30,067 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-22', 'temperature': 32, 'humidity': 67.19, 'wind_speed': 2.31, 'condition': 'unknown'}, {'date': '2025-05-23', 'temperature': 31, 'humidity': 76.97, 'wind_speed': 2.56, 'condition': 'unknown'}, {'date': '2025-05-24', 'temperature': 30, 'humidity': 69.01, 'wind_speed': 2.55, 'condition': 'unknown'}]
+2025-05-21 18:45:30,068 - INFO - 127.0.0.1 - - [21/May/2025 18:45:30] "POST /predict HTTP/1.1" 200 -
+2025-05-21 18:47:06,326 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-21', 'temperature': 31.71, 'humidity': 68, 'wind_speed': 2.68, 'condition': 'light rain'}, {'date': '2025-05-20', 'temperature': 29.48, 'humidity': 75, 'wind_speed': 0.89, 'condition': 'broken clouds'}, {'date': '2025-05-18', 'temperature': 28.37, 'humidity': 80, 'wind_speed': 3.13, 'condition': 'overcast clouds'}, {'date': '2025-05-17', 'temperature': 31.71, 'humidity': 69, 'wind_speed': 1.34, 'condition': 'overcast clouds'}, {'date': '2025-05-16', 'temperature': 33.93, 'humidity': 65, 'wind_speed': 2.68, 'condition': 'overcast clouds'}, {'date': '2025-05-15', 'temperature': 30.04, 'humidity': 77, 'wind_speed': 2.24, 'condition': 'overcast clouds'}, {'date': '2025-05-14', 'temperature': 33.93, 'humidity': 66, 'wind_speed': 2.24, 'condition': 'overcast clouds'}], 'current_temp': 27.82, 'current_humidity': 79, 'current_condition': 'moderate rain', 'current_wind_speed': 1.54, 'days_ahead': 3}
+2025-05-21 18:47:06,338 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed        condition
+0  2025-05-21        31.71        68        2.68       light rain
+1  2025-05-20        29.48        75        0.89    broken clouds
+2  2025-05-18        28.37        80        3.13  overcast clouds
+3  2025-05-17        31.71        69        1.34  overcast clouds
+4  2025-05-16        33.93        65        2.68  overcast clouds
+2025-05-21 18:47:06,339 - INFO - Mapping description 'light rain'
+2025-05-21 18:47:06,339 - INFO - Matched rain -> 'rain'
+2025-05-21 18:47:06,340 - INFO - Mapping description 'broken clouds'
+2025-05-21 18:47:06,340 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:47:06,340 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:47:06,340 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:47:06,340 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:47:06,340 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:47:06,340 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:47:06,340 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:47:06,340 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:47:06,340 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:47:06,340 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:47:06,340 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:47:06,346 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
+2025-05-21 18:47:06,346 - INFO - Unique conditions after mapping: ['rain' 'clouds']
+2025-05-21 18:47:06,364 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
+num_class: Number of output class in the multi-class classification.. \u0110\u1eb7t model_condition là None.
+2025-05-21 18:47:06,718 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
+2025-05-21 18:47:06,721 - INFO - Mapping description 'moderate rain'
+2025-05-21 18:47:06,721 - INFO - Matched rain -> 'rain'
+2025-05-21 18:47:06,728 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 18:47:06.721209: temp=32, humidity=67.19, wind=2.31, condition=unknown
+2025-05-21 18:47:06,733 - INFO - D\u1ef1 \u0111oán ngày 2025-05-23 18:47:06.721209: temp=31, humidity=76.97, wind=2.56, condition=unknown
+2025-05-21 18:47:06,739 - INFO - D\u1ef1 \u0111oán ngày 2025-05-24 18:47:06.721209: temp=30, humidity=69.01, wind=2.55, condition=unknown
+2025-05-21 18:47:06,739 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-22', 'temperature': 32, 'humidity': 67.19, 'wind_speed': 2.31, 'condition': 'unknown'}, {'date': '2025-05-23', 'temperature': 31, 'humidity': 76.97, 'wind_speed': 2.56, 'condition': 'unknown'}, {'date': '2025-05-24', 'temperature': 30, 'humidity': 69.01, 'wind_speed': 2.55, 'condition': 'unknown'}]
+2025-05-21 18:47:06,740 - INFO - 127.0.0.1 - - [21/May/2025 18:47:06] "POST /predict HTTP/1.1" 200 -
+2025-05-21 18:48:45,590 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-21', 'temperature': 33, 'humidity': 64, 'wind_speed': 6.21, 'condition': 'overcast clouds'}, {'date': '2025-05-20', 'temperature': 27.32, 'humidity': 83, 'wind_speed': 6.01, 'condition': 'overcast clouds'}, {'date': '2025-05-18', 'temperature': 25.54, 'humidity': 95, 'wind_speed': 1.96, 'condition': 'moderate rain'}, {'date': '2025-05-17', 'temperature': 28.88, 'humidity': 76, 'wind_speed': 1.9, 'condition': 'overcast clouds'}, {'date': '2025-05-16', 'temperature': 30.63, 'humidity': 71, 'wind_speed': 3.65, 'condition': 'broken clouds'}, {'date': '2025-05-15', 'temperature': 25.56, 'humidity': 95, 'wind_speed': 2.82, 'condition': 'moderate rain'}, {'date': '2025-05-14', 'temperature': 30.96, 'humidity': 61, 'wind_speed': 2.95, 'condition': 'broken clouds'}], 'current_temp': 31, 'current_humidity': 79, 'current_condition': 'overcast clouds', 'current_wind_speed': 5.06, 'days_ahead': 3}
+2025-05-21 18:48:45,604 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed        condition
+0  2025-05-21        33.00        64        6.21  overcast clouds
+1  2025-05-20        27.32        83        6.01  overcast clouds
+2  2025-05-18        25.54        95        1.96    moderate rain
+3  2025-05-17        28.88        76        1.90  overcast clouds
+4  2025-05-16        30.63        71        3.65    broken clouds
+2025-05-21 18:48:45,604 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:48:45,604 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:48:45,604 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:48:45,604 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:48:45,604 - INFO - Mapping description 'moderate rain'
+2025-05-21 18:48:45,605 - INFO - Matched rain -> 'rain'
+2025-05-21 18:48:45,605 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:48:45,605 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:48:45,605 - INFO - Mapping description 'broken clouds'
+2025-05-21 18:48:45,605 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:48:45,605 - INFO - Mapping description 'moderate rain'
+2025-05-21 18:48:45,605 - INFO - Matched rain -> 'rain'
+2025-05-21 18:48:45,605 - INFO - Mapping description 'broken clouds'
+2025-05-21 18:48:45,605 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:48:45,612 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
+2025-05-21 18:48:45,612 - INFO - Unique conditions after mapping: ['clouds' 'rain']
+2025-05-21 18:48:45,631 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
+num_class: Number of output class in the multi-class classification.. \u0110\u1eb7t model_condition là None.
+2025-05-21 18:48:45,958 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
+2025-05-21 18:48:45,961 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:48:45,961 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:48:45,969 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 18:48:45.961799: temp=25, humidity=94.98, wind=2.82, condition=unknown
+2025-05-21 18:48:45,975 - INFO - D\u1ef1 \u0111oán ngày 2025-05-23 18:48:45.961799: temp=30, humidity=71.02, wind=2.0, condition=unknown
+2025-05-21 18:48:45,979 - INFO - D\u1ef1 \u0111oán ngày 2025-05-24 18:48:45.961799: temp=28, humidity=76.01, wind=3.04, condition=unknown
+2025-05-21 18:48:45,980 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-22', 'temperature': 25, 'humidity': 94.98, 'wind_speed': 2.82, 'condition': 'unknown'}, {'date': '2025-05-23', 'temperature': 30, 'humidity': 71.02, 'wind_speed': 2.0, 'condition': 'unknown'}, {'date': '2025-05-24', 'temperature': 28, 'humidity': 76.01, 'wind_speed': 3.04, 'condition': 'unknown'}]
+2025-05-21 18:48:45,980 - INFO - 127.0.0.1 - - [21/May/2025 18:48:45] "POST /predict HTTP/1.1" 200 -
+2025-05-21 18:48:49,492 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-21', 'temperature': 31.71, 'humidity': 68, 'wind_speed': 2.68, 'condition': 'light rain'}, {'date': '2025-05-20', 'temperature': 29.48, 'humidity': 75, 'wind_speed': 0.89, 'condition': 'broken clouds'}, {'date': '2025-05-18', 'temperature': 28.37, 'humidity': 80, 'wind_speed': 3.13, 'condition': 'overcast clouds'}, {'date': '2025-05-17', 'temperature': 31.71, 'humidity': 69, 'wind_speed': 1.34, 'condition': 'overcast clouds'}, {'date': '2025-05-16', 'temperature': 33.93, 'humidity': 65, 'wind_speed': 2.68, 'condition': 'overcast clouds'}, {'date': '2025-05-15', 'temperature': 30.04, 'humidity': 77, 'wind_speed': 2.24, 'condition': 'overcast clouds'}, {'date': '2025-05-14', 'temperature': 33.93, 'humidity': 66, 'wind_speed': 2.24, 'condition': 'overcast clouds'}], 'current_temp': 27.82, 'current_humidity': 79, 'current_condition': 'moderate rain', 'current_wind_speed': 1.54, 'days_ahead': 3}
+2025-05-21 18:48:49,504 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed        condition
+0  2025-05-21        31.71        68        2.68       light rain
+1  2025-05-20        29.48        75        0.89    broken clouds
+2  2025-05-18        28.37        80        3.13  overcast clouds
+3  2025-05-17        31.71        69        1.34  overcast clouds
+4  2025-05-16        33.93        65        2.68  overcast clouds
+2025-05-21 18:48:49,505 - INFO - Mapping description 'light rain'
+2025-05-21 18:48:49,505 - INFO - Matched rain -> 'rain'
+2025-05-21 18:48:49,505 - INFO - Mapping description 'broken clouds'
+2025-05-21 18:48:49,505 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:48:49,505 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:48:49,505 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:48:49,506 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:48:49,506 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:48:49,506 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:48:49,506 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:48:49,506 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:48:49,506 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:48:49,506 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:48:49,506 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:48:49,513 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
+2025-05-21 18:48:49,514 - INFO - Unique conditions after mapping: ['rain' 'clouds']
+2025-05-21 18:48:49,539 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
+num_class: Number of output class in the multi-class classification.. \u0110\u1eb7t model_condition là None.
+2025-05-21 18:48:49,896 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
+2025-05-21 18:48:49,899 - INFO - Mapping description 'moderate rain'
+2025-05-21 18:48:49,899 - INFO - Matched rain -> 'rain'
+2025-05-21 18:48:49,907 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 18:48:49.899237: temp=32, humidity=67.19, wind=2.31, condition=unknown
+2025-05-21 18:48:49,912 - INFO - D\u1ef1 \u0111oán ngày 2025-05-23 18:48:49.899237: temp=31, humidity=76.97, wind=2.56, condition=unknown
+2025-05-21 18:48:49,919 - INFO - D\u1ef1 \u0111oán ngày 2025-05-24 18:48:49.899237: temp=30, humidity=69.01, wind=2.55, condition=unknown
+2025-05-21 18:48:49,919 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-22', 'temperature': 32, 'humidity': 67.19, 'wind_speed': 2.31, 'condition': 'unknown'}, {'date': '2025-05-23', 'temperature': 31, 'humidity': 76.97, 'wind_speed': 2.56, 'condition': 'unknown'}, {'date': '2025-05-24', 'temperature': 30, 'humidity': 69.01, 'wind_speed': 2.55, 'condition': 'unknown'}]
+2025-05-21 18:48:49,920 - INFO - 127.0.0.1 - - [21/May/2025 18:48:49] "POST /predict HTTP/1.1" 200 -
+2025-05-21 18:51:25,117 - INFO - Yêu c\u1ea7u nh\u1eadn \u0111\u01b0\u1ee3c: {'historical_data': [{'date': '2025-05-21', 'temperature': 31.71, 'humidity': 68, 'wind_speed': 2.68, 'condition': 'light rain'}, {'date': '2025-05-20', 'temperature': 29.48, 'humidity': 75, 'wind_speed': 0.89, 'condition': 'broken clouds'}, {'date': '2025-05-18', 'temperature': 28.37, 'humidity': 80, 'wind_speed': 3.13, 'condition': 'overcast clouds'}, {'date': '2025-05-17', 'temperature': 31.71, 'humidity': 69, 'wind_speed': 1.34, 'condition': 'overcast clouds'}, {'date': '2025-05-16', 'temperature': 33.93, 'humidity': 65, 'wind_speed': 2.68, 'condition': 'overcast clouds'}, {'date': '2025-05-15', 'temperature': 30.04, 'humidity': 77, 'wind_speed': 2.24, 'condition': 'overcast clouds'}, {'date': '2025-05-14', 'temperature': 33.93, 'humidity': 66, 'wind_speed': 2.24, 'condition': 'overcast clouds'}], 'current_temp': 28.01, 'current_humidity': 89, 'current_condition': 'heavy intensity rain', 'current_wind_speed': 1.54, 'days_ahead': 3}
+2025-05-21 18:51:25,124 - INFO - D\u1eef li\u1ec7u \u0111\u1ea7u vào:          date  temperature  humidity  wind_speed        condition
+0  2025-05-21        31.71        68        2.68       light rain
+1  2025-05-20        29.48        75        0.89    broken clouds
+2  2025-05-18        28.37        80        3.13  overcast clouds
+3  2025-05-17        31.71        69        1.34  overcast clouds
+4  2025-05-16        33.93        65        2.68  overcast clouds
+2025-05-21 18:51:25,124 - INFO - Mapping description 'light rain'
+2025-05-21 18:51:25,125 - INFO - Matched rain -> 'rain'
+2025-05-21 18:51:25,125 - INFO - Mapping description 'broken clouds'
+2025-05-21 18:51:25,125 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:51:25,125 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:51:25,125 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:51:25,125 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:51:25,125 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:51:25,125 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:51:25,125 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:51:25,125 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:51:25,125 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:51:25,125 - INFO - Mapping description 'overcast clouds'
+2025-05-21 18:51:25,125 - INFO - Matched clouds -> 'clouds'
+2025-05-21 18:51:25,128 - INFO - DataFrame columns after feature engineering: ['date', 'temperature', 'humidity', 'wind_speed', 'condition', 'day_of_week', 'month', 'temp_lag1', 'humidity_lag1', 'wind_speed_lag1']
+2025-05-21 18:51:25,128 - INFO - Unique conditions after mapping: ['rain' 'clouds']
+2025-05-21 18:51:25,139 - ERROR - L\u1ed7i hu\u1ea5n luy\u1ec7n model_condition: value 0 for Parameter num_class should be greater equal to 1
+num_class: Number of output class in the multi-class classification.. \u0110\u1eb7t model_condition là None.
+2025-05-21 18:51:25,199 - INFO - Hu\u1ea5n luy\u1ec7n mô hình thành công
+2025-05-21 18:51:25,201 - INFO - Mapping description 'heavy intensity rain'
+2025-05-21 18:51:25,201 - INFO - Matched rain -> 'rain'
+2025-05-21 18:51:25,203 - INFO - D\u1ef1 \u0111oán ngày 2025-05-22 18:51:25.201672: temp=32, humidity=67.19, wind=2.31, condition=unknown
+2025-05-21 18:51:25,205 - INFO - D\u1ef1 \u0111oán ngày 2025-05-23 18:51:25.201672: temp=31, humidity=76.97, wind=2.56, condition=unknown
+2025-05-21 18:51:25,207 - INFO - D\u1ef1 \u0111oán ngày 2025-05-24 18:51:25.201672: temp=30, humidity=69.01, wind=2.55, condition=unknown
+2025-05-21 18:51:25,207 - INFO - D\u1ef1 \u0111oán cu\u1ed1i cùng: [{'date': '2025-05-22', 'temperature': 32, 'humidity': 67.19, 'wind_speed': 2.31, 'condition': 'unknown'}, {'date': '2025-05-23', 'temperature': 31, 'humidity': 76.97, 'wind_speed': 2.56, 'condition': 'unknown'}, {'date': '2025-05-24', 'temperature': 30, 'humidity': 69.01, 'wind_speed': 2.55, 'condition': 'unknown'}]
+2025-05-21 18:51:25,207 - INFO - 127.0.0.1 - - [21/May/2025 18:51:25] "POST /predict HTTP/1.1" 200 -
