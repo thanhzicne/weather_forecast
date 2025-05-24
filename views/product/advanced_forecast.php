@@ -184,7 +184,7 @@
                 </form>
             </div>
         </div>
-
+        <!--  -->
         <div class="row">
             <?php if (empty($sortedPredictions)): ?>
                 <p class="text-center text-muted">Không có dữ liệu dự báo hoặc không tìm thấy thành phố.</p>

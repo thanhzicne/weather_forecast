@@ -16,9 +16,8 @@
             <div class="col-md-4">
                 <div class="card text-center shadow-lg border-0 p-3">
                     <img src="../images/team/member1.jpg" class="rounded-circle mx-auto d-block border" alt="Thành viên 1" width="150" height="150">
-                    <h4 class="mt-3">Nguyễn Văn A</h4>
-                    <p class="text-muted">Backend Developer</p>
-                    <p class="small">Chuyên xử lý dữ liệu và xây dựng API.</p>
+                    <h4 class="mt-3">Phạm Đức Thành</h4>
+                    <p class="text-muted">2280602956</p>
                 </div>
             </div>
 
@@ -26,9 +25,8 @@
             <div class="col-md-4">
                 <div class="card text-center shadow-lg border-0 p-3">
                     <img src="../images/team/member2.jpg" class="rounded-circle mx-auto d-block border" alt="Thành viên 2" width="150" height="150">
-                    <h4 class="mt-3">Trần Thị B</h4>
-                    <p class="text-muted">Frontend Developer</p>
-                    <p class="small">Thiết kế giao diện và tối ưu trải nghiệm người dùng.</p>
+                    <h4 class="mt-3">Võ Trường Huy</h4>
+                    <p class="text-muted">2280601278</p>
                 </div>
             </div>
 
@@ -36,9 +34,8 @@
             <div class="col-md-4">
                 <div class="card text-center shadow-lg border-0 p-3">
                     <img src="../images/team/member3.jpg" class="rounded-circle mx-auto d-block border" alt="Thành viên 3" width="150" height="150">
-                    <h4 class="mt-3">Lê Văn C</h4>
-                    <p class="text-muted">Data Scientist</p>
-                    <p class="small">Phân tích dữ liệu và tích hợp AI/ML vào dự án.</p>
+                    <h4 class="mt-3">Giáp Trọng Hiếu</h4>
+                    <p class="text-muted">2280600941</p>
                 </div>
             </div>
         </div>

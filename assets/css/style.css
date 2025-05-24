@@ -17,9 +17,8 @@
 
 .search-box {
     position: relative;
-    max-width: 300px;
-    flex: 1;
-    width: 100%; 
+    width: 300px; /* Cố định chiều rộng */
+    flex: none; /* Ngăn co giãn */
 }
 
 .search-input {
@@ -58,10 +57,22 @@
 }
 
 .time {
+    width: 220px; /* Cố định chiều rộng */
     font-size: 14px;
-    color: #333;
+    color: #fff;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
+#local-time {
+    width: 85px; /* Cố định chiều rộng */
+    display: inline-block;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
 /* =========================== Thanh điều hướng ==============================*/
 .navbar {
     background: linear-gradient(90deg, #2c2f33, #3a3d41, #4b4f54);

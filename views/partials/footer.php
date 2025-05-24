@@ -7,7 +7,9 @@
                     <img src="/weather_forecast/assets/images/Logo/logo.png" alt="Logo" height="50">
                 </a>
                     <div>
-                        <h5 class="fw-bold mb-3">Dubaothoitiet</h5>
+                        <a href="/weather_forecast/views/layouts/main.php" style="text-decoration: none; color: white;">
+                            <h5 class="fw-bold mb-3">Dubaothoitiet</h5>
+                        </a>
                         <ul class="list-unstyled small">
                             <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Hồ Chí Minh</li>
                             <li class="mb-2"><i class="bi bi-envelope me-2"></i> Dubaothoitiet@email.com</li>
