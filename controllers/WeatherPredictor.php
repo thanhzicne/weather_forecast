@@ -21,6 +21,13 @@ class WeatherPredictor {
         }
         $description = strtolower($description);
 
+        // Trả về ngay giá trị nếu đã chuẩn hóa từ Flask
+        $validConditions = ['clear', 'clouds', 'rain', 'thunderstorm', 'snow', 'drizzle', 'mist'];
+        if (in_array($description, $validConditions)) {
+            return $description;
+        }
+
+        // Xử lý các mô tả chi tiết từ OpenWeatherMap
         // Rain conditions
         if (strpos($description, 'light rain') !== false || strpos($description, 'moderate rain') !== false || strpos($description, 'light intensity shower rain') !== false || strpos($description, 'shower rain') !== false) {
             return 'light_rain';

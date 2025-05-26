@@ -40,7 +40,7 @@
     <div class="container mt-3">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a class="text-dark" href="/weather_forecast/views/layouts/main.php">Trang chủ</a></li>
-            <span class="separator"> » </span>
+            <span class="separator">&nbsp;»&nbsp; </span>
             <li class="breadcrumb-item active" aria-current="page">Tin tức thời tiết</li>
         </ol>
     </div>

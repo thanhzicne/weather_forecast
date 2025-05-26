@@ -1,78 +1,20 @@
 /* public/css/styles.css */
 /* =========================== Header ==============================*/
 .header {
-    background: linear-gradient(90deg, #0052D4, #4364F7, #6FB1FC); 
-    border-bottom: 3px solid #003c8f; 
+    background: linear-gradient(90deg, #0052D4, #4364F7, #6FB1FC);
+    border-bottom: 3px solid #003c8f;
+    padding: 10px 0;
 }
 
 .header .logo span {
     font-size: 20px;
-    color: #0056b3;
-    transition: color 0.3s;
+    color: #fff;
 }
 
 .header .logo:hover span {
-    color: #ff9800; 
-}
-
-.search-box {
-    position: relative;
-    width: 300px; /* Cố định chiều rộng */
-    flex: none; /* Ngăn co giãn */
-}
-
-.search-input {
-    border-radius: 20px;
-    padding: 8px 15px;
-    border: 1px solid #6a82fb;
-    padding-right: 40px; 
-    text-align: left; 
-}
-
-.search-icon-btn {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.search-icon {
-    font-size: 1.2rem;
-    color: gray;
-}
-
-.search-box button {
-    border-radius: 12px;
-    padding: 6px 10px;
-    /* background: #fafafb; */
-    color: white;
-    transition: background 0.3s;
-}
-
-.search-box button:hover {
-    background: #5a72ea;
-}
-
-.time {
-    width: 220px; /* Cố định chiều rộng */
-    font-size: 14px;
     color: #fff;
-    background-color: rgba(0,0,0,0.6);
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    white-space: nowrap;
-    flex-shrink: 0;
 }
 
-#local-time {
-    width: 85px; /* Cố định chiều rộng */
-    display: inline-block;
-    text-align: right;
-    font-variant-numeric: tabular-nums;
-}
 /* =========================== Thanh điều hướng ==============================*/
 .navbar {
     background: linear-gradient(90deg, #2c2f33, #3a3d41, #4b4f54);

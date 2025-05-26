@@ -13,102 +13,145 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <style>
         body {
-            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg,rgb(247, 247, 247),);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
         }
+
         .container {
             max-width: 1200px;
         }
+
         .search-bar {
-            max-width: 400px;
+            max-width: 500px;
             margin: 20px auto;
         }
+
         .weather-card {
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            margin-bottom: 20px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            overflow: hidden;
         }
+
         .weather-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
         }
+
         .weather-card .card-title {
-            background: linear-gradient(90deg, #007bff, #00c6ff);
+            background: linear-gradient(90deg, #2196f3, #00bcd4);
             color: white;
-            padding: 10px;
-            border-radius: 15px 15px 0 0;
-            margin-bottom: 0;
-            font-size: 1.5rem;
-            font-weight: bold;
+            padding: 14px;
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-align: center;
         }
+
         .weather-card .card-body {
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 0 0 15px 15px;
+            padding: 25px;
+            background: #f9f9f9;
         }
+
         .forecast-row {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            flex-wrap: wrap;
             gap: 20px;
-            overflow-x: auto;
-            padding: 15px 0;
         }
+
         .forecast-day {
             flex: 0 0 auto;
-            background: linear-gradient(135deg, #ffffff, #e6f0fa);
+            background: linear-gradient(135deg, #b3e5fc, #e1f5fe);
             border-radius: 12px;
             padding: 20px;
             text-align: center;
-            min-width: 180px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            min-width: 160px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease, background 0.3s ease;
-            border: 1px solid #e0e0e0;
+            border: 1px solid #90caf9;
         }
+
         .forecast-day:hover {
             transform: scale(1.05);
-            background: linear-gradient(135deg, #d3e3fd, #e6f0fa);
+            background: linear-gradient(135deg, #81d4fa, #b2ebf2);
         }
+
         .forecast-day .date {
-            font-weight: bold;
+            font-weight: 600;
             font-size: 1rem;
-            color: #333;
             margin-bottom: 10px;
+            color: #212121;
         }
+
         .weather-icon {
-            width: 60px; /* Adjust size */
-            height: 60px;
+            width: 64px;
+            height: 64px;
             margin-bottom: 10px;
         }
+
         .temperature {
             font-size: 1.8rem;
             font-weight: bold;
             margin-bottom: 10px;
         }
+
         .temperature-high {
-            color: #dc3545;
+            color: #e53935;
         }
+
         .temperature-low {
-            color: #007bff;
+            color: #1e88e5;
         }
+
         .humidity-high {
-            color: #17a2b8;
+            color: #00838f;
         }
+
         .forecast-day p {
-            margin: 5px 0;
+            margin: 4px 0;
             font-size: 0.9rem;
             color: #555;
         }
+
         .forecast-day p.condition {
             font-weight: 500;
             color: #333;
         }
+
+        .breadcrumb {
+            background: transparent;
+            font-size: 0.95rem;
+        }
+
+        .breadcrumb .breadcrumb-item a {
+            text-decoration: none;
+            color: #0277bd;
+        }
+
+        .breadcrumb .breadcrumb-item.active {
+            color: #333;
+        }
+
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+            display: none;
+            width: 48px;
+            height: 48px;
+            font-size: 20px;
+        }
+
         .pagination .page-link {
             border-radius: 50%;
             margin: 0 5px;
             color: #007bff;
         }
+
         .pagination .page-item.active .page-link {
             background-color: #007bff;
             border-color: #007bff;
@@ -160,9 +203,9 @@
     <!-- Breadcrumb -->
     <div class="container mt-3">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a class="text-dark" href="/weather_forecast/views/layouts/main.php">Trang chủ</a></li>
-            <span class="separator"> » </span>
-            <li class="breadcrumb-item active" aria-current="page">Dự báo thời tiết demo</li>
+            <li class="breadcrumb-item"><a class="text-dark text-decoration-underline" href="/weather_forecast/views/layouts/main.php">Trang chủ</a></li>
+            <span class="separator"> &nbsp;»&nbsp;</span>
+            <li class="breadcrumb-item active " aria-current="page">Dự báo thời tiết</li>
         </ol>
     </div>
     <!-- Main Content -->

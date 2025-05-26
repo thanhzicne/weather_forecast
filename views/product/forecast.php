@@ -14,7 +14,7 @@
         <div class="container mt-3">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a class="text-dark" href="/weather_forecast/views/layouts/main.php">Trang chủ</a></li>
-                <span class="separator"> » </span>
+                <span class="separator"> &nbsp;»&nbsp; </span>
                 <li class="breadcrumb-item active" aria-current="page">Dự báo thời tiết</li>
             </ol>
         </div>
@@ -27,19 +27,6 @@
                     <span class="input-group-text bg-white border-0"><i class="fas fa-search text-primary"></i></span>
                     <input type="text" name="search-location" id="search-input" class="form-control shadow-sm rounded-pill border-0" placeholder="Tìm kiếm tỉnh, thành phố...">
                 </div>
-                <!-- Nút xem thời tiết các ngày tới  -->
-                <div class="forecast-buttons mt-4 d-flex flex-column align-items-center">
-                    <div class="d-flex justify-content-center mb-3 flex-wrap">
-                        <button class="btn btn-primary forecast-btn mx-2 mb-2 px-4 py-2 rounded-pill shadow" data-day="0" id="todayBtn">Hôm nay</button>
-                        <button class="btn btn-primary forecast-btn mx-2 mb-2 px-4 py-2 rounded-pill shadow" data-day="1">Ngày mai</button>
-                        <button class="btn btn-primary forecast-btn mx-2 mb-2 px-4 py-2 rounded-pill shadow" data-day="2">Ngày kia</button>
-                    </div>
-                    <div class="d-flex justify-content-center flex-wrap">
-                        <button class="btn btn-primary forecast-btn mx-2 mb-2 px-4 py-2 rounded-pill shadow" data-day="3">Ba ngày tới</button>
-                        <button class="btn btn-primary forecast-btn mx-2 mb-2 px-4 py-2 rounded-pill shadow" data-day="4">Bốn ngày tới</button>
-                    </div>
-                </div>
-                <!--  -->
             </div>
             
             <!-- Hiển thị thông tin thời tiết -->
