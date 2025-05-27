@@ -191,8 +191,7 @@ class WeatherPredictor {
             "SELECT date, temperature, humidity, `condition`, wind_speed 
             FROM weather_history 
             WHERE city = :city AND date <= CURDATE() 
-            ORDER BY date DESC 
-            LIMIT 7"
+            ORDER BY date DESC "
         );
         $stmtHistory->bindValue(':city', $city, PDO::PARAM_STR);
         $stmtHistory->execute();
@@ -310,8 +309,8 @@ class WeatherPredictor {
 
         return $cityPredictions;
     }
-
-    public function predict($days_ahead = 3, $searchQuery = '') {
+    //  Số ngày muốn dự báo
+    public function predict($days_ahead = 7, $searchQuery = '') {
         try {
             // Xác định thành phố cần dự báo
             $cityToPredict = !empty($searchQuery) ? $searchQuery : 'Hà Nội';

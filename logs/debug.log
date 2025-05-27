@@ -1,0 +1,371 @@
+Payload gửi đến Flask cho Hà Nội: {"historical_data":[{"date":"2025-05-27","temperature":24,"humidity":81,"wind_speed":1.72,"condition":"overcast clouds"},{"date":"2025-05-26","temperature":25,"humidity":69,"wind_speed":2.5,"condition":"overcast clouds"},{"date":"2025-05-25","temperature":25,"humidity":66,"wind_speed":5.74,"condition":"overcast clouds"},{"date":"2025-05-24","temperature":23,"humidity":86,"wind_speed":3.36,"condition":"overcast clouds"},{"date":"2025-05-21","temperature":33,"humidity":64,"wind_speed":6.21,"condition":"overcast clouds"},{"date":"2025-05-20","temperature":27.32,"humidity":83,"wind_speed":6.01,"condition":"overcast clouds"},{"date":"2025-05-18","temperature":25.54,"humidity":95,"wind_speed":1.96,"condition":"moderate rain"},{"date":"2025-05-17","temperature":28.88,"humidity":76,"wind_speed":1.9,"condition":"overcast clouds"},{"date":"2025-05-16","temperature":30.63,"humidity":71,"wind_speed":3.65,"condition":"broken clouds"},{"date":"2025-05-15","temperature":25.56,"humidity":95,"wind_speed":2.82,"condition":"moderate rain"},{"date":"2025-05-14","temperature":30.96,"humidity":61,"wind_speed":2.95,"condition":"broken clouds"},{"date":"2025-05-13","temperature":29.07,"humidity":61,"wind_speed":6.08,"condition":"broken clouds"},{"date":"2025-05-11","temperature":26,"humidity":63,"wind_speed":2.17,"condition":"overcast clouds"},{"date":"2025-05-10","temperature":30,"humidity":66,"wind_speed":2.78,"condition":"broken clouds"},{"date":"2025-05-08","temperature":34,"humidity":55,"wind_speed":1.7,"condition":"broken clouds"},{"date":"2025-05-07","temperature":29,"humidity":89,"wind_speed":4.03,"condition":"light rain"},{"date":"2025-05-06","temperature":31,"humidity":87,"wind_speed":3.81,"condition":"moderate rain"},{"date":"2025-05-04","temperature":30,"humidity":69,"wind_speed":2.66,"condition":"Clouds"},{"date":"2025-05-03","temperature":29,"humidity":65,"wind_speed":1.74,"condition":"Clouds"},{"date":"2025-05-02","temperature":34,"humidity":46,"wind_speed":1.38,"condition":"Clouds"},{"date":"2025-04-30","temperature":27,"humidity":80,"wind_speed":1.57,"condition":"Clouds"},{"date":"2025-04-29","temperature":25,"humidity":82,"wind_speed":0.86,"condition":"Clouds"},{"date":"2025-04-28","temperature":24,"humidity":80,"wind_speed":2.74,"condition":"Clouds"},{"date":"2025-04-27","temperature":28,"humidity":77,"wind_speed":4.8,"condition":"Clouds"}],"current_temp":24,"current_humidity":87,"current_condition":"overcast clouds","current_wind_speed":1.56,"days_ahead":7}Flask Response for http://localhost:5000/predict (HTTP 200): {
+  "predictions": [
+    {
+      "condition": "clouds",
+      "date": "2025-05-28",
+      "humidity": 84.6,
+      "temperature": 29,
+      "wind_speed": 2.57
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-05-29",
+      "humidity": 65.14,
+      "temperature": 30,
+      "wind_speed": 1.82
+    },
+    {
+      "condition": "unknown",
+      "date": "2025-05-30",
+      "humidity": 47.0,
+      "temperature": 33,
+      "wind_speed": 2.76
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-05-31",
+      "humidity": 66.55,
+      "temperature": 31,
+      "wind_speed": 2.82
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-01",
+      "humidity": 62.87,
+      "temperature": 32,
+      "wind_speed": 2.54
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-02",
+      "humidity": 61.14,
+      "temperature": 29,
+      "wind_speed": 5.91
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-03",
+      "humidity": 63.45,
+      "temperature": 26,
+      "wind_speed": 3.95
+    }
+  ]
+}
+Payload gửi đến Flask cho Thành phố Hồ Chí Minh: {"historical_data":[{"date":"2025-05-27","temperature":32.26,"humidity":67,"wind_speed":3.13,"condition":"scattered clouds"},{"date":"2025-05-26","temperature":29.48,"humidity":76,"wind_speed":3.09,"condition":"clear sky"},{"date":"2025-05-25","temperature":31.15,"humidity":73,"wind_speed":3.6,"condition":"clear sky"},{"date":"2025-05-24","temperature":27.26,"humidity":82,"wind_speed":1.54,"condition":"few clouds"},{"date":"2025-05-21","temperature":31.71,"humidity":68,"wind_speed":2.68,"condition":"light rain"},{"date":"2025-05-20","temperature":29.48,"humidity":75,"wind_speed":0.89,"condition":"broken clouds"},{"date":"2025-05-18","temperature":28.37,"humidity":80,"wind_speed":3.13,"condition":"overcast clouds"},{"date":"2025-05-17","temperature":31.71,"humidity":69,"wind_speed":1.34,"condition":"overcast clouds"},{"date":"2025-05-16","temperature":33.93,"humidity":65,"wind_speed":2.68,"condition":"overcast clouds"},{"date":"2025-05-15","temperature":30.04,"humidity":77,"wind_speed":2.24,"condition":"overcast clouds"},{"date":"2025-05-14","temperature":33.93,"humidity":66,"wind_speed":2.24,"condition":"overcast clouds"},{"date":"2025-05-13","temperature":31.15,"humidity":70,"wind_speed":2.68,"condition":"light rain"},{"date":"2025-05-11","temperature":31.71,"humidity":73,"wind_speed":3.6,"condition":"few clouds"},{"date":"2025-05-10","temperature":27.01,"humidity":89,"wind_speed":1.03,"condition":"broken clouds"},{"date":"2025-05-08","temperature":36.01,"humidity":49,"wind_speed":4.12,"condition":"broken clouds"},{"date":"2025-05-07","temperature":29.01,"humidity":89,"wind_speed":2.06,"condition":"light rain"},{"date":"2025-05-06","temperature":31.15,"humidity":72,"wind_speed":4.12,"condition":"few clouds"},{"date":"2025-05-04","temperature":31.71,"humidity":66,"wind_speed":2.06,"condition":"Clouds"},{"date":"2025-05-03","temperature":32.26,"humidity":66,"wind_speed":5.14,"condition":"Clouds"},{"date":"2025-05-02","temperature":33.93,"humidity":63,"wind_speed":5.66,"condition":"Clouds"},{"date":"2025-04-30","temperature":31.01,"humidity":62,"wind_speed":2.57,"condition":"Clouds"},{"date":"2025-04-29","temperature":30.6,"humidity":67,"wind_speed":3.58,"condition":"Clouds"},{"date":"2025-04-28","temperature":33.01,"humidity":52,"wind_speed":4.12,"condition":"Clear"},{"date":"2025-04-27","temperature":32.82,"humidity":63,"wind_speed":3.09,"condition":"Clouds"}],"current_temp":28.37,"current_humidity":76,"current_condition":"broken clouds","current_wind_speed":5.14,"days_ahead":7}Flask Response for http://localhost:5000/predict (HTTP 200): {
+  "predictions": [
+    {
+      "condition": "clouds",
+      "date": "2025-05-28",
+      "humidity": 66.04,
+      "temperature": 31,
+      "wind_speed": 1.64
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-05-29",
+      "humidity": 65.21,
+      "temperature": 32,
+      "wind_speed": 4.91
+    },
+    {
+      "condition": "unknown",
+      "date": "2025-05-30",
+      "humidity": 77.53,
+      "temperature": 33,
+      "wind_speed": 4.54
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-05-31",
+      "humidity": 79.49,
+      "temperature": 31,
+      "wind_speed": 1.25
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-01",
+      "humidity": 71.22,
+      "temperature": 32,
+      "wind_speed": 3.08
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-02",
+      "humidity": 76.84,
+      "temperature": 29,
+      "wind_speed": 2.15
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-03",
+      "humidity": 69.92,
+      "temperature": 31,
+      "wind_speed": 2.91
+    }
+  ]
+}
+Payload gửi đến Flask cho Cà Mau: {"historical_data":[{"date":"2025-05-27","temperature":30.45,"humidity":70,"wind_speed":1.46,"condition":"overcast clouds"},{"date":"2025-05-26","temperature":26.25,"humidity":89,"wind_speed":0.9,"condition":"overcast clouds"},{"date":"2025-05-25","temperature":30.08,"humidity":74,"wind_speed":1.99,"condition":"light rain"},{"date":"2025-05-24","temperature":25.39,"humidity":91,"wind_speed":1.5,"condition":"overcast clouds"},{"date":"2025-05-21","temperature":31.26,"humidity":66,"wind_speed":2.63,"condition":"moderate rain"},{"date":"2025-05-20","temperature":27.07,"humidity":87,"wind_speed":1.4,"condition":"overcast clouds"},{"date":"2025-05-18","temperature":27.37,"humidity":82,"wind_speed":1.45,"condition":"overcast clouds"},{"date":"2025-05-17","temperature":34.07,"humidity":50,"wind_speed":3.78,"condition":"scattered clouds"},{"date":"2025-05-16","temperature":36.06,"humidity":42,"wind_speed":6.56,"condition":"broken clouds"},{"date":"2025-05-15","temperature":28.69,"humidity":76,"wind_speed":1.99,"condition":"clear sky"},{"date":"2025-05-14","temperature":34.33,"humidity":48,"wind_speed":4.94,"condition":"overcast clouds"},{"date":"2025-05-13","temperature":31.21,"humidity":63,"wind_speed":2.9,"condition":"light rain"},{"date":"2025-05-11","temperature":29.86,"humidity":67,"wind_speed":3.31,"condition":"light rain"},{"date":"2025-05-10","temperature":33.34,"humidity":52,"wind_speed":5.15,"condition":"overcast clouds"},{"date":"2025-05-08","temperature":34.99,"humidity":43,"wind_speed":3.44,"condition":"broken clouds"},{"date":"2025-05-07","temperature":27.74,"humidity":80,"wind_speed":1.43,"condition":"light rain"},{"date":"2025-05-06","temperature":27.88,"humidity":79,"wind_speed":1.53,"condition":"broken clouds"},{"date":"2025-05-04","temperature":34.48,"humidity":44,"wind_speed":3.39,"condition":"Clouds"},{"date":"2025-05-03","temperature":33.44,"humidity":50,"wind_speed":4.48,"condition":"Rain"},{"date":"2025-05-02","temperature":29.5,"humidity":69,"wind_speed":3.67,"condition":"Clouds"},{"date":"2025-04-30","temperature":34.12,"humidity":44,"wind_speed":4.29,"condition":"Clouds"},{"date":"2025-04-29","temperature":29.72,"humidity":61,"wind_speed":1.49,"condition":"Clouds"},{"date":"2025-04-28","temperature":34.55,"humidity":44,"wind_speed":4.09,"condition":"Clouds"},{"date":"2025-04-27","temperature":33.39,"humidity":49,"wind_speed":3.43,"condition":"Clouds"}],"current_temp":26.3,"current_humidity":89,"current_condition":"overcast clouds","current_wind_speed":1.55,"days_ahead":7}Flask Response for http://localhost:5000/predict (HTTP 200): {
+  "predictions": [
+    {
+      "condition": "rain",
+      "date": "2025-05-28",
+      "humidity": 54.23,
+      "temperature": 34,
+      "wind_speed": 2.84
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-05-29",
+      "humidity": 57.89,
+      "temperature": 29,
+      "wind_speed": 3.42
+    },
+    {
+      "condition": "unknown",
+      "date": "2025-05-30",
+      "humidity": 47.73,
+      "temperature": 34,
+      "wind_speed": 5.48
+    },
+    {
+      "condition": "unknown",
+      "date": "2025-05-31",
+      "humidity": 65.98,
+      "temperature": 29,
+      "wind_speed": 3.8
+    },
+    {
+      "condition": "unknown",
+      "date": "2025-06-01",
+      "humidity": 48.91,
+      "temperature": 36,
+      "wind_speed": 4.8
+    },
+    {
+      "condition": "rain",
+      "date": "2025-06-02",
+      "humidity": 72.85,
+      "temperature": 28,
+      "wind_speed": 3.65
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-03",
+      "humidity": 58.92,
+      "temperature": 34,
+      "wind_speed": 1.94
+    }
+  ]
+}
+Payload gửi đến Flask cho Thành phố Hồ Chí Minh: {"historical_data":[{"date":"2025-05-27","temperature":32.26,"humidity":67,"wind_speed":3.13,"condition":"scattered clouds"},{"date":"2025-05-26","temperature":29.48,"humidity":76,"wind_speed":3.09,"condition":"clear sky"},{"date":"2025-05-25","temperature":31.15,"humidity":73,"wind_speed":3.6,"condition":"clear sky"},{"date":"2025-05-24","temperature":27.26,"humidity":82,"wind_speed":1.54,"condition":"few clouds"},{"date":"2025-05-21","temperature":31.71,"humidity":68,"wind_speed":2.68,"condition":"light rain"},{"date":"2025-05-20","temperature":29.48,"humidity":75,"wind_speed":0.89,"condition":"broken clouds"},{"date":"2025-05-18","temperature":28.37,"humidity":80,"wind_speed":3.13,"condition":"overcast clouds"},{"date":"2025-05-17","temperature":31.71,"humidity":69,"wind_speed":1.34,"condition":"overcast clouds"},{"date":"2025-05-16","temperature":33.93,"humidity":65,"wind_speed":2.68,"condition":"overcast clouds"},{"date":"2025-05-15","temperature":30.04,"humidity":77,"wind_speed":2.24,"condition":"overcast clouds"},{"date":"2025-05-14","temperature":33.93,"humidity":66,"wind_speed":2.24,"condition":"overcast clouds"},{"date":"2025-05-13","temperature":31.15,"humidity":70,"wind_speed":2.68,"condition":"light rain"},{"date":"2025-05-11","temperature":31.71,"humidity":73,"wind_speed":3.6,"condition":"few clouds"},{"date":"2025-05-10","temperature":27.01,"humidity":89,"wind_speed":1.03,"condition":"broken clouds"},{"date":"2025-05-08","temperature":36.01,"humidity":49,"wind_speed":4.12,"condition":"broken clouds"},{"date":"2025-05-07","temperature":29.01,"humidity":89,"wind_speed":2.06,"condition":"light rain"},{"date":"2025-05-06","temperature":31.15,"humidity":72,"wind_speed":4.12,"condition":"few clouds"},{"date":"2025-05-04","temperature":31.71,"humidity":66,"wind_speed":2.06,"condition":"Clouds"},{"date":"2025-05-03","temperature":32.26,"humidity":66,"wind_speed":5.14,"condition":"Clouds"},{"date":"2025-05-02","temperature":33.93,"humidity":63,"wind_speed":5.66,"condition":"Clouds"},{"date":"2025-04-30","temperature":31.01,"humidity":62,"wind_speed":2.57,"condition":"Clouds"},{"date":"2025-04-29","temperature":30.6,"humidity":67,"wind_speed":3.58,"condition":"Clouds"},{"date":"2025-04-28","temperature":33.01,"humidity":52,"wind_speed":4.12,"condition":"Clear"},{"date":"2025-04-27","temperature":32.82,"humidity":63,"wind_speed":3.09,"condition":"Clouds"}],"current_temp":28.37,"current_humidity":76,"current_condition":"broken clouds","current_wind_speed":5.14,"days_ahead":7}Flask Response for http://localhost:5000/predict (HTTP 200): {
+  "predictions": [
+    {
+      "condition": "clouds",
+      "date": "2025-05-28",
+      "humidity": 66.04,
+      "temperature": 31,
+      "wind_speed": 1.64
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-05-29",
+      "humidity": 65.21,
+      "temperature": 32,
+      "wind_speed": 4.91
+    },
+    {
+      "condition": "unknown",
+      "date": "2025-05-30",
+      "humidity": 77.53,
+      "temperature": 33,
+      "wind_speed": 4.54
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-05-31",
+      "humidity": 79.49,
+      "temperature": 31,
+      "wind_speed": 1.25
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-01",
+      "humidity": 71.22,
+      "temperature": 32,
+      "wind_speed": 3.08
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-02",
+      "humidity": 76.84,
+      "temperature": 29,
+      "wind_speed": 2.15
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-03",
+      "humidity": 69.92,
+      "temperature": 31,
+      "wind_speed": 2.91
+    }
+  ]
+}
+Payload gửi đến Flask cho Thành phố Hồ Chí Minh: {"historical_data":[{"date":"2025-05-27","temperature":32.26,"humidity":67,"wind_speed":3.13,"condition":"scattered clouds"},{"date":"2025-05-26","temperature":29.48,"humidity":76,"wind_speed":3.09,"condition":"clear sky"},{"date":"2025-05-25","temperature":31.15,"humidity":73,"wind_speed":3.6,"condition":"clear sky"},{"date":"2025-05-24","temperature":27.26,"humidity":82,"wind_speed":1.54,"condition":"few clouds"},{"date":"2025-05-21","temperature":31.71,"humidity":68,"wind_speed":2.68,"condition":"light rain"},{"date":"2025-05-20","temperature":29.48,"humidity":75,"wind_speed":0.89,"condition":"broken clouds"},{"date":"2025-05-18","temperature":28.37,"humidity":80,"wind_speed":3.13,"condition":"overcast clouds"},{"date":"2025-05-17","temperature":31.71,"humidity":69,"wind_speed":1.34,"condition":"overcast clouds"},{"date":"2025-05-16","temperature":33.93,"humidity":65,"wind_speed":2.68,"condition":"overcast clouds"},{"date":"2025-05-15","temperature":30.04,"humidity":77,"wind_speed":2.24,"condition":"overcast clouds"},{"date":"2025-05-14","temperature":33.93,"humidity":66,"wind_speed":2.24,"condition":"overcast clouds"},{"date":"2025-05-13","temperature":31.15,"humidity":70,"wind_speed":2.68,"condition":"light rain"},{"date":"2025-05-11","temperature":31.71,"humidity":73,"wind_speed":3.6,"condition":"few clouds"},{"date":"2025-05-10","temperature":27.01,"humidity":89,"wind_speed":1.03,"condition":"broken clouds"},{"date":"2025-05-08","temperature":36.01,"humidity":49,"wind_speed":4.12,"condition":"broken clouds"},{"date":"2025-05-07","temperature":29.01,"humidity":89,"wind_speed":2.06,"condition":"light rain"},{"date":"2025-05-06","temperature":31.15,"humidity":72,"wind_speed":4.12,"condition":"few clouds"},{"date":"2025-05-04","temperature":31.71,"humidity":66,"wind_speed":2.06,"condition":"Clouds"},{"date":"2025-05-03","temperature":32.26,"humidity":66,"wind_speed":5.14,"condition":"Clouds"},{"date":"2025-05-02","temperature":33.93,"humidity":63,"wind_speed":5.66,"condition":"Clouds"},{"date":"2025-04-30","temperature":31.01,"humidity":62,"wind_speed":2.57,"condition":"Clouds"},{"date":"2025-04-29","temperature":30.6,"humidity":67,"wind_speed":3.58,"condition":"Clouds"},{"date":"2025-04-28","temperature":33.01,"humidity":52,"wind_speed":4.12,"condition":"Clear"},{"date":"2025-04-27","temperature":32.82,"humidity":63,"wind_speed":3.09,"condition":"Clouds"}],"current_temp":28.37,"current_humidity":76,"current_condition":"broken clouds","current_wind_speed":5.14,"days_ahead":7}Flask Response for http://localhost:5000/predict (HTTP 200): {
+  "predictions": [
+    {
+      "condition": "clouds",
+      "date": "2025-05-28",
+      "humidity": 66.04,
+      "temperature": 31,
+      "wind_speed": 1.64
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-05-29",
+      "humidity": 65.21,
+      "temperature": 32,
+      "wind_speed": 4.91
+    },
+    {
+      "condition": "unknown",
+      "date": "2025-05-30",
+      "humidity": 77.53,
+      "temperature": 33,
+      "wind_speed": 4.54
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-05-31",
+      "humidity": 79.49,
+      "temperature": 31,
+      "wind_speed": 1.25
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-01",
+      "humidity": 71.22,
+      "temperature": 32,
+      "wind_speed": 3.08
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-02",
+      "humidity": 76.84,
+      "temperature": 29,
+      "wind_speed": 2.15
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-03",
+      "humidity": 69.92,
+      "temperature": 31,
+      "wind_speed": 2.91
+    }
+  ]
+}
+Payload gửi đến Flask cho Hà Nội: {"historical_data":[{"date":"2025-05-27","temperature":24,"humidity":81,"wind_speed":1.72,"condition":"overcast clouds"},{"date":"2025-05-26","temperature":25,"humidity":69,"wind_speed":2.5,"condition":"overcast clouds"},{"date":"2025-05-25","temperature":25,"humidity":66,"wind_speed":5.74,"condition":"overcast clouds"},{"date":"2025-05-24","temperature":23,"humidity":86,"wind_speed":3.36,"condition":"overcast clouds"},{"date":"2025-05-21","temperature":33,"humidity":64,"wind_speed":6.21,"condition":"overcast clouds"},{"date":"2025-05-20","temperature":27.32,"humidity":83,"wind_speed":6.01,"condition":"overcast clouds"},{"date":"2025-05-18","temperature":25.54,"humidity":95,"wind_speed":1.96,"condition":"moderate rain"},{"date":"2025-05-17","temperature":28.88,"humidity":76,"wind_speed":1.9,"condition":"overcast clouds"},{"date":"2025-05-16","temperature":30.63,"humidity":71,"wind_speed":3.65,"condition":"broken clouds"},{"date":"2025-05-15","temperature":25.56,"humidity":95,"wind_speed":2.82,"condition":"moderate rain"},{"date":"2025-05-14","temperature":30.96,"humidity":61,"wind_speed":2.95,"condition":"broken clouds"},{"date":"2025-05-13","temperature":29.07,"humidity":61,"wind_speed":6.08,"condition":"broken clouds"},{"date":"2025-05-11","temperature":26,"humidity":63,"wind_speed":2.17,"condition":"overcast clouds"},{"date":"2025-05-10","temperature":30,"humidity":66,"wind_speed":2.78,"condition":"broken clouds"},{"date":"2025-05-08","temperature":34,"humidity":55,"wind_speed":1.7,"condition":"broken clouds"},{"date":"2025-05-07","temperature":29,"humidity":89,"wind_speed":4.03,"condition":"light rain"},{"date":"2025-05-06","temperature":31,"humidity":87,"wind_speed":3.81,"condition":"moderate rain"},{"date":"2025-05-04","temperature":30,"humidity":69,"wind_speed":2.66,"condition":"Clouds"},{"date":"2025-05-03","temperature":29,"humidity":65,"wind_speed":1.74,"condition":"Clouds"},{"date":"2025-05-02","temperature":34,"humidity":46,"wind_speed":1.38,"condition":"Clouds"},{"date":"2025-04-30","temperature":27,"humidity":80,"wind_speed":1.57,"condition":"Clouds"},{"date":"2025-04-29","temperature":25,"humidity":82,"wind_speed":0.86,"condition":"Clouds"},{"date":"2025-04-28","temperature":24,"humidity":80,"wind_speed":2.74,"condition":"Clouds"},{"date":"2025-04-27","temperature":28,"humidity":77,"wind_speed":4.8,"condition":"Clouds"}],"current_temp":24,"current_humidity":87,"current_condition":"overcast clouds","current_wind_speed":1.56,"days_ahead":7}Flask Response for http://localhost:5000/predict (HTTP 200): {
+  "predictions": [
+    {
+      "condition": "clouds",
+      "date": "2025-05-28",
+      "humidity": 84.6,
+      "temperature": 29,
+      "wind_speed": 2.57
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-05-29",
+      "humidity": 65.14,
+      "temperature": 30,
+      "wind_speed": 1.82
+    },
+    {
+      "condition": "unknown",
+      "date": "2025-05-30",
+      "humidity": 47.0,
+      "temperature": 33,
+      "wind_speed": 2.76
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-05-31",
+      "humidity": 66.55,
+      "temperature": 31,
+      "wind_speed": 2.82
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-01",
+      "humidity": 62.87,
+      "temperature": 32,
+      "wind_speed": 2.54
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-02",
+      "humidity": 61.14,
+      "temperature": 29,
+      "wind_speed": 5.91
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-03",
+      "humidity": 63.45,
+      "temperature": 26,
+      "wind_speed": 3.95
+    }
+  ]
+}
+Payload gửi đến Flask cho Cà Mau: {"historical_data":[{"date":"2025-05-27","temperature":30.45,"humidity":70,"wind_speed":1.46,"condition":"overcast clouds"},{"date":"2025-05-26","temperature":26.25,"humidity":89,"wind_speed":0.9,"condition":"overcast clouds"},{"date":"2025-05-25","temperature":30.08,"humidity":74,"wind_speed":1.99,"condition":"light rain"},{"date":"2025-05-24","temperature":25.39,"humidity":91,"wind_speed":1.5,"condition":"overcast clouds"},{"date":"2025-05-21","temperature":31.26,"humidity":66,"wind_speed":2.63,"condition":"moderate rain"},{"date":"2025-05-20","temperature":27.07,"humidity":87,"wind_speed":1.4,"condition":"overcast clouds"},{"date":"2025-05-18","temperature":27.37,"humidity":82,"wind_speed":1.45,"condition":"overcast clouds"},{"date":"2025-05-17","temperature":34.07,"humidity":50,"wind_speed":3.78,"condition":"scattered clouds"},{"date":"2025-05-16","temperature":36.06,"humidity":42,"wind_speed":6.56,"condition":"broken clouds"},{"date":"2025-05-15","temperature":28.69,"humidity":76,"wind_speed":1.99,"condition":"clear sky"},{"date":"2025-05-14","temperature":34.33,"humidity":48,"wind_speed":4.94,"condition":"overcast clouds"},{"date":"2025-05-13","temperature":31.21,"humidity":63,"wind_speed":2.9,"condition":"light rain"},{"date":"2025-05-11","temperature":29.86,"humidity":67,"wind_speed":3.31,"condition":"light rain"},{"date":"2025-05-10","temperature":33.34,"humidity":52,"wind_speed":5.15,"condition":"overcast clouds"},{"date":"2025-05-08","temperature":34.99,"humidity":43,"wind_speed":3.44,"condition":"broken clouds"},{"date":"2025-05-07","temperature":27.74,"humidity":80,"wind_speed":1.43,"condition":"light rain"},{"date":"2025-05-06","temperature":27.88,"humidity":79,"wind_speed":1.53,"condition":"broken clouds"},{"date":"2025-05-04","temperature":34.48,"humidity":44,"wind_speed":3.39,"condition":"Clouds"},{"date":"2025-05-03","temperature":33.44,"humidity":50,"wind_speed":4.48,"condition":"Rain"},{"date":"2025-05-02","temperature":29.5,"humidity":69,"wind_speed":3.67,"condition":"Clouds"},{"date":"2025-04-30","temperature":34.12,"humidity":44,"wind_speed":4.29,"condition":"Clouds"},{"date":"2025-04-29","temperature":29.72,"humidity":61,"wind_speed":1.49,"condition":"Clouds"},{"date":"2025-04-28","temperature":34.55,"humidity":44,"wind_speed":4.09,"condition":"Clouds"},{"date":"2025-04-27","temperature":33.39,"humidity":49,"wind_speed":3.43,"condition":"Clouds"}],"current_temp":26.29,"current_humidity":89,"current_condition":"overcast clouds","current_wind_speed":1.55,"days_ahead":7}Flask Response for http://localhost:5000/predict (HTTP 200): {
+  "predictions": [
+    {
+      "condition": "rain",
+      "date": "2025-05-28",
+      "humidity": 54.23,
+      "temperature": 34,
+      "wind_speed": 2.84
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-05-29",
+      "humidity": 57.89,
+      "temperature": 29,
+      "wind_speed": 3.42
+    },
+    {
+      "condition": "unknown",
+      "date": "2025-05-30",
+      "humidity": 47.73,
+      "temperature": 34,
+      "wind_speed": 5.48
+    },
+    {
+      "condition": "unknown",
+      "date": "2025-05-31",
+      "humidity": 65.98,
+      "temperature": 29,
+      "wind_speed": 3.8
+    },
+    {
+      "condition": "unknown",
+      "date": "2025-06-01",
+      "humidity": 48.91,
+      "temperature": 36,
+      "wind_speed": 4.8
+    },
+    {
+      "condition": "rain",
+      "date": "2025-06-02",
+      "humidity": 72.85,
+      "temperature": 28,
+      "wind_speed": 3.65
+    },
+    {
+      "condition": "clouds",
+      "date": "2025-06-03",
+      "humidity": 58.92,
+      "temperature": 34,
+      "wind_speed": 1.94
+    }
+  ]
+}

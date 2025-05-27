@@ -202,7 +202,8 @@ def predict():
         train_models(data['historical_data'])
 
         # Dự đoán cho các ngày tới
-        days_ahead = min(max(int(data['days_ahead']), 1), 3)
+        # Số ngày muốn dự báo
+        days_ahead = min(max(int(data['days_ahead']), 1), 7)
         predictions = predict_future(data['historical_data'], days_ahead, {
             'current_temp': data.get('current_temp', 0),
             'current_humidity': data.get('current_humidity', 0),

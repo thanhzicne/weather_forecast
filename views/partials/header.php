@@ -137,12 +137,13 @@
             <!-- Thời gian -->
             <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
                 <div class="dropdown text-white">
-                    <button type="button" class="btn header-item time" id="time-local-btn">
+                    <div class="btn header-item time" id="time-local-btn">
                         <span><i class="bi bi-clock me-2"></i>Giờ địa phương:</span>
-                        <span id="local-time" class="ms-1">21:32:10 26/05/2025</span>
-                    </button>
+                        <span id="local-time" class="ms-1">00:00:00 00/00/0000</span>
+                    </div>
                 </div>
             </div>
+            <!--  -->
         </div>
     </div>
 
@@ -159,18 +160,6 @@
                 }
                 console.log('Form submitted with query:', searchQuery);
             });
-
-            // Cập nhật thời gian động
-            function updateTime() {
-                const timeElement = document.getElementById('local-time');
-                const now = new Date();
-                const options = { timeZone: 'Asia/Ho_Chi_Minh', hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' };
-                const timeString = now.toLocaleTimeString('vi-VN', options);
-                const dateString = now.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' });
-                timeElement.textContent = `${timeString} ${dateString}`;
-            }
-            setInterval(updateTime, 1000);
-            updateTime();
         });
     </script>
 </header>

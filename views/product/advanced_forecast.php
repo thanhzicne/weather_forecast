@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <style>
         body {
-            background: linear-gradient(135deg,rgb(247, 247, 247),);
+            background: linear-gradient(135deg, rgb(247, 247, 247));
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #333;
         }
@@ -59,16 +59,16 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 10px; /* Giảm gap để phù hợp với 7 ngày */
         }
 
         .forecast-day {
             flex: 0 0 auto;
             background: linear-gradient(135deg, #b3e5fc, #e1f5fe);
             border-radius: 12px;
-            padding: 20px;
+            padding: 12px; /* Giảm padding */
             text-align: center;
-            min-width: 160px;
+            min-width: 120px; /* Giảm min-width để hiển thị 7 ngày tốt hơn */
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease, background 0.3s ease;
             border: 1px solid #90caf9;
@@ -81,21 +81,21 @@
 
         .forecast-day .date {
             font-weight: 600;
-            font-size: 1rem;
-            margin-bottom: 10px;
+            font-size: 0.85rem; /* Giảm font-size */
+            margin-bottom: 8px;
             color: #212121;
         }
 
         .weather-icon {
-            width: 64px;
-            height: 64px;
-            margin-bottom: 10px;
+            width: 40px; /* Giảm kích thước icon */
+            height: 40px;
+            margin-bottom: 8px;
         }
 
         .temperature {
-            font-size: 1.8rem;
+            font-size: 1.3rem; /* Giảm font-size */
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .temperature-high {
@@ -111,8 +111,8 @@
         }
 
         .forecast-day p {
-            margin: 4px 0;
-            font-size: 0.9rem;
+            margin: 3px 0;
+            font-size: 0.8rem; /* Giảm font-size */
             color: #555;
         }
 
@@ -169,8 +169,9 @@
     // Lấy từ khóa tìm kiếm
     $searchQuery = isset($_GET['search']) ? trim($_GET['search']) : '';
 
-    // Luôn dự báo 3 ngày
-    $days_ahead = 3;
+    // Luôn dự báo 7 ngày
+    // Số ngày muốn dự đoán
+    $days_ahead = 7;
 
     $predictor = new WeatherPredictor();
     $predictions = $predictor->predict($days_ahead, $searchQuery);
@@ -188,7 +189,7 @@
 
     $paginatedPredictions = array_slice($sortedPredictions, $offset, $itemsPerPage, true);
 
-    // lấy icon từ OpenWeatherMap icon codes
+    // Lấy icon từ OpenWeatherMap icon codes
     $weatherIconMap = [
         'clear' => '01d',
         'clouds' => '03d',
@@ -204,8 +205,8 @@
     <div class="container mt-3">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a class="text-dark text-decoration-underline" href="/weather_forecast/views/layouts/main.php">Trang chủ</a></li>
-            <span class="separator"> &nbsp;»&nbsp;</span>
-            <li class="breadcrumb-item active " aria-current="page">Dự báo thời tiết</li>
+            <span class="separator">  » </span>
+            <li class="breadcrumb-item active" aria-current="page">Dự báo thời tiết</li>
         </ol>
     </div>
     <!-- Main Content -->
